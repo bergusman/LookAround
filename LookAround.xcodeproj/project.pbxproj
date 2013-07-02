@@ -16,8 +16,6 @@
 		AD2FC79217836E7100DB308E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79117836E7100DB308E /* Default.png */; };
 		AD2FC79417836E7100DB308E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79317836E7100DB308E /* Default@2x.png */; };
 		AD2FC79617836E7100DB308E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79517836E7100DB308E /* Default-568h@2x.png */; };
-		AD2FC79917836E7100DB308E /* LAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2FC79817836E7100DB308E /* LAViewController.m */; };
-		AD2FC79C17836E7100DB308E /* LAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79A17836E7100DB308E /* LAViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,18 +23,15 @@
 		AD2FC77F17836E7100DB308E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AD2FC78117836E7100DB308E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AD2FC78317836E7100DB308E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AD2FC78717836E7100DB308E /* LookAround-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LookAround-Info.plist"; sourceTree = "<group>"; };
+		AD2FC78717836E7100DB308E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD2FC78917836E7100DB308E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD2FC78B17836E7100DB308E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AD2FC78D17836E7100DB308E /* LookAround-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LookAround-Prefix.pch"; sourceTree = "<group>"; };
+		AD2FC78D17836E7100DB308E /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		AD2FC78E17836E7100DB308E /* LAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAAppDelegate.h; sourceTree = "<group>"; };
 		AD2FC78F17836E7100DB308E /* LAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAAppDelegate.m; sourceTree = "<group>"; };
 		AD2FC79117836E7100DB308E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AD2FC79317836E7100DB308E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AD2FC79517836E7100DB308E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AD2FC79717836E7100DB308E /* LAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAViewController.h; sourceTree = "<group>"; };
-		AD2FC79817836E7100DB308E /* LAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAViewController.m; sourceTree = "<group>"; };
-		AD2FC79B17836E7100DB308E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LAViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +78,9 @@
 		AD2FC78517836E7100DB308E /* LookAround */ = {
 			isa = PBXGroup;
 			children = (
-				AD2FC78E17836E7100DB308E /* LAAppDelegate.h */,
-				AD2FC78F17836E7100DB308E /* LAAppDelegate.m */,
-				AD2FC79717836E7100DB308E /* LAViewController.h */,
-				AD2FC79817836E7100DB308E /* LAViewController.m */,
-				AD2FC79A17836E7100DB308E /* LAViewController.xib */,
+				AD2FC7A217836EB000DB308E /* Sources */,
 				AD2FC78617836E7100DB308E /* Supporting Files */,
+				AD2FC7A617836EF100DB308E /* Resources */,
 			);
 			path = LookAround;
 			sourceTree = "<group>";
@@ -96,15 +88,79 @@
 		AD2FC78617836E7100DB308E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AD2FC78717836E7100DB308E /* LookAround-Info.plist */,
+				AD2FC78717836E7100DB308E /* Info.plist */,
 				AD2FC78817836E7100DB308E /* InfoPlist.strings */,
 				AD2FC78B17836E7100DB308E /* main.m */,
-				AD2FC78D17836E7100DB308E /* LookAround-Prefix.pch */,
+				AD2FC78D17836E7100DB308E /* Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD2FC7A217836EB000DB308E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AD2FC7A317836EB700DB308E /* Models */,
+				AD2FC7A417836EC000DB308E /* Views */,
+				AD2FC7A517836ECA00DB308E /* Controllers */,
+				AD2FC78E17836E7100DB308E /* LAAppDelegate.h */,
+				AD2FC78F17836E7100DB308E /* LAAppDelegate.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		AD2FC7A317836EB700DB308E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD2FC7A417836EC000DB308E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AD2FC7A517836ECA00DB308E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AD2FC7A617836EF100DB308E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD2FC7AA17836F2600DB308E /* Defaults */,
+				AD2FC7A817836F0A00DB308E /* Icons */,
+				AD2FC7A917836F1100DB308E /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD2FC7A817836F0A00DB308E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		AD2FC7A917836F1100DB308E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		AD2FC7AA17836F2600DB308E /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
 				AD2FC79117836E7100DB308E /* Default.png */,
 				AD2FC79317836E7100DB308E /* Default@2x.png */,
 				AD2FC79517836E7100DB308E /* Default-568h@2x.png */,
 			);
-			name = "Supporting Files";
+			name = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +219,6 @@
 				AD2FC79217836E7100DB308E /* Default.png in Resources */,
 				AD2FC79417836E7100DB308E /* Default@2x.png in Resources */,
 				AD2FC79617836E7100DB308E /* Default-568h@2x.png in Resources */,
-				AD2FC79C17836E7100DB308E /* LAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +231,6 @@
 			files = (
 				AD2FC78C17836E7100DB308E /* main.m in Sources */,
 				AD2FC79017836E7100DB308E /* LAAppDelegate.m in Sources */,
-				AD2FC79917836E7100DB308E /* LAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +243,6 @@
 				AD2FC78917836E7100DB308E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		AD2FC79A17836E7100DB308E /* LAViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD2FC79B17836E7100DB308E /* en */,
-			);
-			name = LAViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -262,8 +308,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LookAround/LookAround-Prefix.pch";
-				INFOPLIST_FILE = "LookAround/LookAround-Info.plist";
+				GCC_PREFIX_HEADER = LookAround/Prefix.pch;
+				INFOPLIST_FILE = LookAround/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -273,8 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LookAround/LookAround-Prefix.pch";
-				INFOPLIST_FILE = "LookAround/LookAround-Info.plist";
+				GCC_PREFIX_HEADER = LookAround/Prefix.pch;
+				INFOPLIST_FILE = LookAround/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
