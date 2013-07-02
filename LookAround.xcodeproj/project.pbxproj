@@ -132,9 +132,9 @@
 		AD2FC7A617836EF100DB308E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD2FC7A917836F1100DB308E /* Images */,
 				AD2FC7AA17836F2600DB308E /* Defaults */,
 				AD2FC7A817836F0A00DB308E /* Icons */,
-				AD2FC7A917836F1100DB308E /* Images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
