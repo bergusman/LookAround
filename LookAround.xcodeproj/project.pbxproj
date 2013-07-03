@@ -17,6 +17,10 @@
 		AD2FC79217836E7100DB308E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79117836E7100DB308E /* Default.png */; };
 		AD2FC79417836E7100DB308E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79317836E7100DB308E /* Default@2x.png */; };
 		AD2FC79617836E7100DB308E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79517836E7100DB308E /* Default-568h@2x.png */; };
+		AD486AEF1784551800BBDA48 /* LAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AEE1784551800BBDA48 /* LAUser.m */; };
+		AD486AF21784553100BBDA48 /* LAPost.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AF11784553100BBDA48 /* LAPost.m */; };
+		AD486AF51784559800BBDA48 /* LAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AF41784559800BBDA48 /* LAClient.m */; };
+		AD486AFA178455D100BBDA48 /* LAAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AF9178455D100BBDA48 /* LAAPI.m */; };
 		AD749B7A1783762200E3A387 /* LAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B781783762200E3A387 /* LAMapViewController.m */; };
 		AD749B7B1783762200E3A387 /* LAMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B791783762200E3A387 /* LAMapViewController.xib */; };
 		AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B8117837CE700E3A387 /* NSData+LAHex.m */; };
@@ -52,6 +56,14 @@
 		AD2FC79117836E7100DB308E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AD2FC79317836E7100DB308E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AD2FC79517836E7100DB308E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AD486AED1784551800BBDA48 /* LAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAUser.h; sourceTree = "<group>"; };
+		AD486AEE1784551800BBDA48 /* LAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAUser.m; sourceTree = "<group>"; };
+		AD486AF01784553100BBDA48 /* LAPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPost.h; sourceTree = "<group>"; };
+		AD486AF11784553100BBDA48 /* LAPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAPost.m; sourceTree = "<group>"; };
+		AD486AF31784559800BBDA48 /* LAClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAClient.h; sourceTree = "<group>"; };
+		AD486AF41784559800BBDA48 /* LAClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAClient.m; sourceTree = "<group>"; };
+		AD486AF8178455D100BBDA48 /* LAAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAAPI.h; sourceTree = "<group>"; };
+		AD486AF9178455D100BBDA48 /* LAAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAAPI.m; sourceTree = "<group>"; };
 		AD749B771783762200E3A387 /* LAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMapViewController.h; sourceTree = "<group>"; };
 		AD749B781783762200E3A387 /* LAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMapViewController.m; sourceTree = "<group>"; };
 		AD749B791783762200E3A387 /* LAMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMapViewController.xib; sourceTree = "<group>"; };
@@ -161,6 +173,12 @@
 		AD2FC7A317836EB700DB308E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD486AFB178455D900BBDA48 /* Client */,
+				AD486AF7178455A700BBDA48 /* API */,
+				AD486AED1784551800BBDA48 /* LAUser.h */,
+				AD486AEE1784551800BBDA48 /* LAUser.m */,
+				AD486AF01784553100BBDA48 /* LAPost.h */,
+				AD486AF11784553100BBDA48 /* LAPost.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -219,6 +237,24 @@
 				AD2FC79517836E7100DB308E /* Default-568h@2x.png */,
 			);
 			name = Defaults;
+			sourceTree = "<group>";
+		};
+		AD486AF7178455A700BBDA48 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AD486AF8178455D100BBDA48 /* LAAPI.h */,
+				AD486AF9178455D100BBDA48 /* LAAPI.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		AD486AFB178455D900BBDA48 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				AD486AF31784559800BBDA48 /* LAClient.h */,
+				AD486AF41784559800BBDA48 /* LAClient.m */,
+			);
+			name = Client;
 			sourceTree = "<group>";
 		};
 		AD749B761783761400E3A387 /* Map */ = {
@@ -428,6 +464,10 @@
 				AD749BA717838CD000E3A387 /* LAProfileView.m in Sources */,
 				AD749BAA17838CE400E3A387 /* LAPostCell.m in Sources */,
 				AD749BAE178391B300E3A387 /* LAMainViewController.m in Sources */,
+				AD486AEF1784551800BBDA48 /* LAUser.m in Sources */,
+				AD486AF21784553100BBDA48 /* LAPost.m in Sources */,
+				AD486AF51784559800BBDA48 /* LAClient.m in Sources */,
+				AD486AFA178455D100BBDA48 /* LAAPI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

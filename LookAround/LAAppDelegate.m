@@ -8,36 +8,27 @@
 
 #import "LAAppDelegate.h"
 
-#import "LALogInViewController.h"
+#import "LAMainViewController.h"
 
 #import <FacebookSDK/FacebookSDK.h>
 
 @implementation LAAppDelegate
 
-- (void)facebookLogIn {
-    [FBSession openActiveSessionWithReadPermissions:nil allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
-        if (status != FBSessionStateOpen) {
-            return;
-        }
-        
-        [session closeAndClearTokenInformation];
-    }];
+- (void)registerForRemoteNotification {
+    UIRemoteNotificationType types = UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge;
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:types];
 }
 
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    
-    //[self facebookLogIn];
-    [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeAlert];
-    
-    LALogInViewController *logInVC = [[LALogInViewController alloc] init];
+    LAMainViewController *logInVC = [[LAMainViewController alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = logInVC;
     [self.window makeKeyAndVisible];
+    
+    [self registerForRemoteNotification];
     
     return YES;
 }
