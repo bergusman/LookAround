@@ -1,5 +1,5 @@
 //
-//  LAMainViewController.h
+//  LAMakePostViewController.h
 //  LookAround
 //
 //  Created by Vitaly Berg on 7/3/13.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LAMainViewController : UIViewController
-
-- (void)showMe;
-
-+ (LAMainViewController *)sharedMainVC;
+@interface LAMakePostViewController : UIViewController
 
 @end

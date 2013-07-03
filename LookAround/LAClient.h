@@ -14,4 +14,6 @@
 
 - (NSOperation *)logInWithFacebookToken:(NSString *)token responseHandler:(LAAPIResponseHandler)handler;
 
++ (LAClient *)sharedClient;
+
 @end
