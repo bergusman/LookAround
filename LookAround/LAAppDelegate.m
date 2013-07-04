@@ -22,14 +22,14 @@
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    LAMainViewController *logInVC = [[LAMainViewController alloc] init];
+    LAMainViewController *mainVC = [[LAMainViewController alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = logInVC;
+    self.window.rootViewController = mainVC;
     [self.window makeKeyAndVisible];
     
     [self registerForRemoteNotification];
-    
+
     return YES;
 }
 

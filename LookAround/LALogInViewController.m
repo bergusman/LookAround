@@ -30,7 +30,7 @@
     
     if (!IS_IPHONE_5) {
         CGRect frame = self.titleLabel.frame;
-        frame.origin.y = 210;
+        frame.origin.y = 130;
         self.titleLabel.frame = frame;
     }
 }

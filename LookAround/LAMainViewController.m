@@ -45,14 +45,17 @@ static LAMainViewController *_sharedMainVC;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //self.wantsFullScreenLayout = NO;
+    
+    /*
     LAMeViewController *meVC = [[LAMeViewController alloc] init];
     [self addChildViewController:meVC];
     meVC.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     [self.scrollView addSubview:meVC.view];
     [meVC didMoveToParentViewController:self];
     self.leftViewController = meVC;
+    */
     
-    /*
     self.hideButtonOnLeft = YES;
     
     LALogInViewController *logInVC = [[LALogInViewController alloc] init];
@@ -62,7 +65,7 @@ static LAMainViewController *_sharedMainVC;
     [logInVC didMoveToParentViewController:self];
     
     self.leftViewController = logInVC;
-    */
+    
     
     LAMapViewController *mapVC = [[LAMapViewController alloc] init];
     [self addChildViewController:mapVC];

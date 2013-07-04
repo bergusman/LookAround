@@ -26,6 +26,8 @@
 		AD4E3E1F1784B0480023757D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4E3E211784B0480023757D /* Localizable.strings */; };
 		AD4E3E271784B3060023757D /* LAMakePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4E3E251784B3060023757D /* LAMakePostViewController.m */; };
 		AD4E3E281784B3060023757D /* LAMakePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4E3E261784B3060023757D /* LAMakePostViewController.xib */; };
+		AD4E3E2B1784BCA10023757D /* UIView+LAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4E3E2A1784BCA10023757D /* UIView+LAFrame.m */; };
+		AD4E3E2E1784C2BE0023757D /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = AD4E3E2D1784C2BE0023757D /* Users.json */; };
 		AD749B7A1783762200E3A387 /* LAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B781783762200E3A387 /* LAMapViewController.m */; };
 		AD749B7B1783762200E3A387 /* LAMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B791783762200E3A387 /* LAMapViewController.xib */; };
 		AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B8117837CE700E3A387 /* NSData+LAHex.m */; };
@@ -77,6 +79,9 @@
 		AD4E3E241784B3060023757D /* LAMakePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMakePostViewController.h; sourceTree = "<group>"; };
 		AD4E3E251784B3060023757D /* LAMakePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMakePostViewController.m; sourceTree = "<group>"; };
 		AD4E3E261784B3060023757D /* LAMakePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMakePostViewController.xib; sourceTree = "<group>"; };
+		AD4E3E291784BCA10023757D /* UIView+LAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LAFrame.h"; sourceTree = "<group>"; };
+		AD4E3E2A1784BCA10023757D /* UIView+LAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LAFrame.m"; sourceTree = "<group>"; };
+		AD4E3E2D1784C2BE0023757D /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		AD749B771783762200E3A387 /* LAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMapViewController.h; sourceTree = "<group>"; };
 		AD749B781783762200E3A387 /* LAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMapViewController.m; sourceTree = "<group>"; };
 		AD749B791783762200E3A387 /* LAMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMapViewController.xib; sourceTree = "<group>"; };
@@ -223,6 +228,7 @@
 		AD2FC7A617836EF100DB308E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD4E3E2C1784C2A70023757D /* Stubs */,
 				AD2FC7A917836F1100DB308E /* Images */,
 				AD2FC7AA17836F2600DB308E /* Defaults */,
 				AD2FC7A817836F0A00DB308E /* Icons */,
@@ -284,6 +290,14 @@
 			name = "Make Post";
 			sourceTree = "<group>";
 		};
+		AD4E3E2C1784C2A70023757D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E3E2D1784C2BE0023757D /* Users.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
 		AD749B761783761400E3A387 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +313,8 @@
 			children = (
 				AD749B8017837CE700E3A387 /* NSData+LAHex.h */,
 				AD749B8117837CE700E3A387 /* NSData+LAHex.m */,
+				AD4E3E291784BCA10023757D /* UIView+LAFrame.h */,
+				AD4E3E2A1784BCA10023757D /* UIView+LAFrame.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -444,6 +460,7 @@
 				AD4E3E1B1784AEE30023757D /* make-post-button.png in Resources */,
 				AD4E3E1F1784B0480023757D /* Localizable.strings in Resources */,
 				AD4E3E281784B3060023757D /* LAMakePostViewController.xib in Resources */,
+				AD4E3E2E1784C2BE0023757D /* Users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +518,7 @@
 				AD486AF51784559800BBDA48 /* LAClient.m in Sources */,
 				AD486AFA178455D100BBDA48 /* LAAPI.m in Sources */,
 				AD4E3E271784B3060023757D /* LAMakePostViewController.m in Sources */,
+				AD4E3E2B1784BCA10023757D /* UIView+LAFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

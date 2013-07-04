@@ -6,4 +6,9 @@
   Copyright (c) 2013 Vitaly Berg. All rights reserved.
 */
 
+"cancel" = "Отменить";
+"close" = "Закрыть";
+"done" = "Готово";
+"ok" = "Oк";
+
 "facebook.login.button" = "Войти с фейсбука";

@@ -9,13 +9,27 @@
 #import "LAMakePostViewController.h"
 
 @interface LAMakePostViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *galleryButton;
 @end
 
 @implementation LAMakePostViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+#pragma mark - 
+
+- (IBAction)takePhotoAction:(id)sender {
+}
+
+- (IBAction)cancelAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)galleryAction:(id)sender {
 }
 
 @end
