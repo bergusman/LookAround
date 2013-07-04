@@ -48,12 +48,14 @@ static LAMainViewController *_sharedMainVC;
     //self.wantsFullScreenLayout = NO;
     
     /*
+    
     LAMeViewController *meVC = [[LAMeViewController alloc] init];
     [self addChildViewController:meVC];
     meVC.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     [self.scrollView addSubview:meVC.view];
     [meVC didMoveToParentViewController:self];
     self.leftViewController = meVC;
+    
     */
     
     self.hideButtonOnLeft = YES;

@@ -45,6 +45,9 @@
 		AD749BAA17838CE400E3A387 /* LAPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749BA917838CE400E3A387 /* LAPostCell.m */; };
 		AD749BAE178391B300E3A387 /* LAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749BAC178391B300E3A387 /* LAMainViewController.m */; };
 		AD749BAF178391B300E3A387 /* LAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749BAD178391B300E3A387 /* LAMainViewController.xib */; };
+		AD857F8817854CDF00803C8A /* LAMagicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F8717854CDF00803C8A /* LAMagicButton.m */; };
+		AD857F8B1785530B00803C8A /* back-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857F891785530B00803C8A /* back-icon@2x.png */; };
+		AD857F8C1785530B00803C8A /* forward-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857F8A1785530B00803C8A /* forward-icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +77,8 @@
 		AD4E3E181784AEAE0023757D /* make-post-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "make-post-button@2x.png"; path = "Images/make-post-button@2x.png"; sourceTree = "<group>"; };
 		AD4E3E1A1784AEE30023757D /* make-post-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "make-post-button.png"; path = "Images/make-post-button.png"; sourceTree = "<group>"; };
 		AD4E3E1C1784B00A0023757D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AD4E3E201784B0480023757D /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AD4E3E221784B04A0023757D /* ru */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD4E3E201784B0480023757D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AD4E3E221784B04A0023757D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AD4E3E241784B3060023757D /* LAMakePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMakePostViewController.h; sourceTree = "<group>"; };
 		AD4E3E251784B3060023757D /* LAMakePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMakePostViewController.m; sourceTree = "<group>"; };
 		AD4E3E261784B3060023757D /* LAMakePostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMakePostViewController.xib; sourceTree = "<group>"; };
@@ -108,6 +111,10 @@
 		AD749BAB178391B300E3A387 /* LAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMainViewController.h; sourceTree = "<group>"; };
 		AD749BAC178391B300E3A387 /* LAMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMainViewController.m; sourceTree = "<group>"; };
 		AD749BAD178391B300E3A387 /* LAMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMainViewController.xib; sourceTree = "<group>"; };
+		AD857F8617854CDF00803C8A /* LAMagicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMagicButton.h; sourceTree = "<group>"; };
+		AD857F8717854CDF00803C8A /* LAMagicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMagicButton.m; sourceTree = "<group>"; };
+		AD857F891785530B00803C8A /* back-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-icon@2x.png"; path = "Images/back-icon@2x.png"; sourceTree = "<group>"; };
+		AD857F8A1785530B00803C8A /* forward-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "forward-icon@2x.png"; path = "Images/forward-icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +212,7 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD857F8517854AB900803C8A /* Magic Button */,
 				AD749B9D17838C7A00E3A387 /* Post Cell */,
 				AD749B9C17838BC300E3A387 /* Profile */,
 				AD749B8E1783893F00E3A387 /* User Cell */,
@@ -248,6 +256,8 @@
 			children = (
 				AD4E3E1A1784AEE30023757D /* make-post-button.png */,
 				AD4E3E181784AEAE0023757D /* make-post-button@2x.png */,
+				AD857F891785530B00803C8A /* back-icon@2x.png */,
+				AD857F8A1785530B00803C8A /* forward-icon@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -389,6 +399,15 @@
 			name = "Post Cell";
 			sourceTree = "<group>";
 		};
+		AD857F8517854AB900803C8A /* Magic Button */ = {
+			isa = PBXGroup;
+			children = (
+				AD857F8617854CDF00803C8A /* LAMagicButton.h */,
+				AD857F8717854CDF00803C8A /* LAMagicButton.m */,
+			);
+			name = "Magic Button";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -461,6 +480,8 @@
 				AD4E3E1F1784B0480023757D /* Localizable.strings in Resources */,
 				AD4E3E281784B3060023757D /* LAMakePostViewController.xib in Resources */,
 				AD4E3E2E1784C2BE0023757D /* Users.json in Resources */,
+				AD857F8B1785530B00803C8A /* back-icon@2x.png in Resources */,
+				AD857F8C1785530B00803C8A /* forward-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +540,7 @@
 				AD486AFA178455D100BBDA48 /* LAAPI.m in Sources */,
 				AD4E3E271784B3060023757D /* LAMakePostViewController.m in Sources */,
 				AD4E3E2B1784BCA10023757D /* UIView+LAFrame.m in Sources */,
+				AD857F8817854CDF00803C8A /* LAMagicButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

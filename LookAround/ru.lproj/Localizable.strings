@@ -12,3 +12,9 @@
 "ok" = "Oк";
 
 "facebook.login.button" = "Войти с фейсбука";
+
+"profile.followers" = "Followers";
+"profile.following" = "Following";
+
+"followers.title" = "Followers";
+"following.title" = "Following";
