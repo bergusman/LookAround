@@ -10,4 +10,7 @@
 
 @interface LAPostCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+
 @end

@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LAProfileViewDelegate;
+
 @interface LAProfileView : UIView
+
+@property (assign, nonatomic) id<LAProfileViewDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+
+@end
+
+@protocol LAProfileViewDelegate <NSObject>
+
+- (void)profileViewDidPressFollowers:(LAProfileView *)profileView;
+- (void)profileViewDidPressFollowing:(LAProfileView *)profileView;
 
 @end

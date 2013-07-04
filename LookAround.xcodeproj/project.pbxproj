@@ -48,6 +48,9 @@
 		AD857F8817854CDF00803C8A /* LAMagicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F8717854CDF00803C8A /* LAMagicButton.m */; };
 		AD857F8B1785530B00803C8A /* back-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857F891785530B00803C8A /* back-icon@2x.png */; };
 		AD857F8C1785530B00803C8A /* forward-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857F8A1785530B00803C8A /* forward-icon@2x.png */; };
+		AD857F991785F44800803C8A /* LARoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F981785F44800803C8A /* LARoundedImageView.m */; };
+		AD857F9D178600EB00803C8A /* LASeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F9C178600EB00803C8A /* LASeparatorView.m */; };
+		AD857FA01786044E00803C8A /* LADottedSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +118,12 @@
 		AD857F8717854CDF00803C8A /* LAMagicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMagicButton.m; sourceTree = "<group>"; };
 		AD857F891785530B00803C8A /* back-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-icon@2x.png"; path = "Images/back-icon@2x.png"; sourceTree = "<group>"; };
 		AD857F8A1785530B00803C8A /* forward-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "forward-icon@2x.png"; path = "Images/forward-icon@2x.png"; sourceTree = "<group>"; };
+		AD857F971785F44800803C8A /* LARoundedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARoundedImageView.h; sourceTree = "<group>"; };
+		AD857F981785F44800803C8A /* LARoundedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARoundedImageView.m; sourceTree = "<group>"; };
+		AD857F9B178600EB00803C8A /* LASeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LASeparatorView.h; sourceTree = "<group>"; };
+		AD857F9C178600EB00803C8A /* LASeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LASeparatorView.m; sourceTree = "<group>"; };
+		AD857F9E1786044E00803C8A /* LADottedSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADottedSeparatorView.h; sourceTree = "<group>"; };
+		AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADottedSeparatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +221,8 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD857F9A178600D700803C8A /* Separator View */,
+				AD857F961785F42700803C8A /* Rounded Image View */,
 				AD857F8517854AB900803C8A /* Magic Button */,
 				AD749B9D17838C7A00E3A387 /* Post Cell */,
 				AD749B9C17838BC300E3A387 /* Profile */,
@@ -408,6 +419,26 @@
 			name = "Magic Button";
 			sourceTree = "<group>";
 		};
+		AD857F961785F42700803C8A /* Rounded Image View */ = {
+			isa = PBXGroup;
+			children = (
+				AD857F971785F44800803C8A /* LARoundedImageView.h */,
+				AD857F981785F44800803C8A /* LARoundedImageView.m */,
+			);
+			name = "Rounded Image View";
+			sourceTree = "<group>";
+		};
+		AD857F9A178600D700803C8A /* Separator View */ = {
+			isa = PBXGroup;
+			children = (
+				AD857F9B178600EB00803C8A /* LASeparatorView.h */,
+				AD857F9C178600EB00803C8A /* LASeparatorView.m */,
+				AD857F9E1786044E00803C8A /* LADottedSeparatorView.h */,
+				AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */,
+			);
+			name = "Separator View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,6 +572,9 @@
 				AD4E3E271784B3060023757D /* LAMakePostViewController.m in Sources */,
 				AD4E3E2B1784BCA10023757D /* UIView+LAFrame.m in Sources */,
 				AD857F8817854CDF00803C8A /* LAMagicButton.m in Sources */,
+				AD857F991785F44800803C8A /* LARoundedImageView.m in Sources */,
+				AD857F9D178600EB00803C8A /* LASeparatorView.m in Sources */,
+				AD857FA01786044E00803C8A /* LADottedSeparatorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

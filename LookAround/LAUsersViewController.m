@@ -10,6 +10,8 @@
 
 #import "LAUserCell.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface LAUsersViewController () <
     UITableViewDataSource,
     UITableViewDelegate
@@ -18,6 +20,11 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSArray *users;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *backButtonTitleLabel;
+
+
 
 @end
 
@@ -28,6 +35,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
+    
+    self.titleLabel.text = self.title;
+    self.backButtonTitleLabel.text = NSLocalizedString(@"back", @"");
     
     self.users = @[
         @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
@@ -66,6 +76,12 @@
     [self.tableView registerNib:nib forCellReuseIdentifier:@"UserCell"];
 }
 
+#pragma mark - IBActions
+
+- (IBAction)backAction:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -75,6 +91,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"UserCell";
     LAUserCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    NSString *url = self.users[indexPath.row];
+    [cell.avatarImageView setImageWithURL:[NSURL URLWithString:url]];
     return cell;
 }
 
@@ -85,7 +103,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 60;
+    return 70;
 }
 
 @end

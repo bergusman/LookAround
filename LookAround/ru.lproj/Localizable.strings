@@ -9,12 +9,13 @@
 "cancel" = "Отменить";
 "close" = "Закрыть";
 "done" = "Готово";
+"back" = "Назад";
 "ok" = "Oк";
 
 "facebook.login.button" = "Войти с фейсбука";
 
-"profile.followers" = "Followers";
-"profile.following" = "Following";
+"profile.followers" = "Подписчики";
+"profile.following" = "Подписан";
 
-"followers.title" = "Followers";
-"following.title" = "Following";
+"followers.title" = "Подписчики";
+"following.title" = "Подписан";

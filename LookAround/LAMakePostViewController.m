@@ -9,9 +9,10 @@
 #import "LAMakePostViewController.h"
 
 @interface LAMakePostViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
 @property (weak, nonatomic) IBOutlet UIButton *galleryButton;
+
 @end
 
 @implementation LAMakePostViewController
