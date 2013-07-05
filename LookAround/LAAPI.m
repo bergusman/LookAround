@@ -10,4 +10,8 @@
 
 @implementation LAAPI
 
+- (NSOperation *)logInWithFacebookToken:(NSString *)token responseHandler:(LAAPIResponseHandler)handler {
+    return nil;
+}
+
 @end
