@@ -51,6 +51,8 @@
 		AD857F991785F44800803C8A /* LARoundedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F981785F44800803C8A /* LARoundedImageView.m */; };
 		AD857F9D178600EB00803C8A /* LASeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F9C178600EB00803C8A /* LASeparatorView.m */; };
 		AD857FA01786044E00803C8A /* LADottedSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */; };
+		AD857FB017869B9200803C8A /* take-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857FAE17869B9200803C8A /* take-photo.png */; };
+		AD857FB117869B9200803C8A /* take-photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857FAF17869B9200803C8A /* take-photo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,8 @@
 		AD857F9C178600EB00803C8A /* LASeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LASeparatorView.m; sourceTree = "<group>"; };
 		AD857F9E1786044E00803C8A /* LADottedSeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADottedSeparatorView.h; sourceTree = "<group>"; };
 		AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADottedSeparatorView.m; sourceTree = "<group>"; };
+		AD857FAE17869B9200803C8A /* take-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "take-photo.png"; path = "Images/take-photo.png"; sourceTree = "<group>"; };
+		AD857FAF17869B9200803C8A /* take-photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "take-photo@2x.png"; path = "Images/take-photo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,8 @@
 		AD2FC7A917836F1100DB308E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AD857FAE17869B9200803C8A /* take-photo.png */,
+				AD857FAF17869B9200803C8A /* take-photo@2x.png */,
 				AD4E3E1A1784AEE30023757D /* make-post-button.png */,
 				AD4E3E181784AEAE0023757D /* make-post-button@2x.png */,
 				AD857F891785530B00803C8A /* back-icon@2x.png */,
@@ -513,6 +519,8 @@
 				AD4E3E2E1784C2BE0023757D /* Users.json in Resources */,
 				AD857F8B1785530B00803C8A /* back-icon@2x.png in Resources */,
 				AD857F8C1785530B00803C8A /* forward-icon@2x.png in Resources */,
+				AD857FB017869B9200803C8A /* take-photo.png in Resources */,
+				AD857FB117869B9200803C8A /* take-photo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
