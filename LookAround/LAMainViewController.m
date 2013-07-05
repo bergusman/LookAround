@@ -11,6 +11,7 @@
 #import "LALogInViewController.h"
 #import "LAMeViewController.h"
 #import "LAMapViewController.h"
+#import "LANavigationController.h"
 
 #import "LAMakePostViewController.h"
 
@@ -50,7 +51,7 @@ static LAMainViewController *_sharedMainVC;
     
     
     LAMeViewController *meVC = [[LAMeViewController alloc] init];
-    UINavigationController *meNC = [[UINavigationController alloc] init];
+    LANavigationController *meNC = [[LANavigationController alloc] init];
     meNC.navigationBarHidden = YES;
     [meNC pushViewController:meVC animated:NO];
     

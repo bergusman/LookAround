@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445C8AC317870C3D003D783C /* LANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C8AC217870C3D003D783C /* LANavigationController.m */; };
 		7D3B7283A18144E69AF9A12B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 777EC35F4A0B402A89C51711 /* libPods.a */; };
 		AD2FC78017836E7100DB308E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2FC77F17836E7100DB308E /* UIKit.framework */; };
 		AD2FC78217836E7100DB308E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2FC78117836E7100DB308E /* Foundation.framework */; };
@@ -56,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		445C8AC117870C3D003D783C /* LANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LANavigationController.h; sourceTree = "<group>"; };
+		445C8AC217870C3D003D783C /* LANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LANavigationController.m; sourceTree = "<group>"; };
 		582E51B839F34DFFA256C34D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		777EC35F4A0B402A89C51711 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2FC77C17836E7100DB308E /* LookAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +148,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445C8ABF17870B8C003D783C /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		445C8AC017870C23003D783C /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				445C8AC117870C3D003D783C /* LANavigationController.h */,
+				445C8AC217870C3D003D783C /* LANavigationController.m */,
+			);
+			name = "Navigation Controller";
+			sourceTree = "<group>";
+		};
 		AD2FC77317836E7100DB308E = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +244,7 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				445C8ABF17870B8C003D783C /* Navigation Controller */,
 				AD857F9A178600D700803C8A /* Separator View */,
 				AD857F961785F42700803C8A /* Rounded Image View */,
 				AD857F8517854AB900803C8A /* Magic Button */,
@@ -238,6 +258,7 @@
 		AD2FC7A517836ECA00DB308E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				445C8AC017870C23003D783C /* Navigation Controller */,
 				AD4E3E231784B2F50023757D /* Make Post */,
 				AD749B861783837F00E3A387 /* Log In */,
 				AD749B851783837A00E3A387 /* Users */,
@@ -583,6 +604,7 @@
 				AD857F991785F44800803C8A /* LARoundedImageView.m in Sources */,
 				AD857F9D178600EB00803C8A /* LASeparatorView.m in Sources */,
 				AD857FA01786044E00803C8A /* LADottedSeparatorView.m in Sources */,
+				445C8AC317870C3D003D783C /* LANavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

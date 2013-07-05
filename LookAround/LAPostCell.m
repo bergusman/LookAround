@@ -8,6 +8,22 @@
 
 #import "LAPostCell.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
+
+@interface LAPostCell ()
+
+@property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *avatars;
+
+@end
+
 @implementation LAPostCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    for (UIImageView *imageView in self.avatars) {
+        [imageView setImageWithURL:[NSURL URLWithString:@"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg"] placeholderImage:nil];
+    }
+}
 
 @end

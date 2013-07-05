@@ -8,6 +8,8 @@
 
 #import "LAUsersViewController.h"
 
+#import "LAMeViewController.h"
+
 #import "LAUserCell.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -99,7 +101,8 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    LAMeViewController *meVC = [[LAMeViewController alloc] init];
+    [self.navigationController pushViewController:meVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
