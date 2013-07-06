@@ -41,8 +41,8 @@
 		AD749B9B17838ACA00E3A387 /* LAUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B9A17838ACA00E3A387 /* LAUserCell.m */; };
 		AD749B9F17838C9500E3A387 /* LAUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B9E17838C9500E3A387 /* LAUserCell.xib */; };
 		AD749BA117838CA400E3A387 /* LAPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749BA017838CA400E3A387 /* LAPostCell.xib */; };
-		AD749BA317838CB500E3A387 /* LAProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749BA217838CB500E3A387 /* LAProfileView.xib */; };
-		AD749BA717838CD000E3A387 /* LAProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749BA617838CD000E3A387 /* LAProfileView.m */; };
+		AD749BA317838CB500E3A387 /* LAProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749BA217838CB500E3A387 /* LAProfileHeaderView.xib */; };
+		AD749BA717838CD000E3A387 /* LAProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749BA617838CD000E3A387 /* LAProfileHeaderView.m */; };
 		AD749BAA17838CE400E3A387 /* LAPostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749BA917838CE400E3A387 /* LAPostCell.m */; };
 		AD749BAE178391B300E3A387 /* LAMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749BAC178391B300E3A387 /* LAMainViewController.m */; };
 		AD749BAF178391B300E3A387 /* LAMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749BAD178391B300E3A387 /* LAMainViewController.xib */; };
@@ -111,9 +111,9 @@
 		AD749B9A17838ACA00E3A387 /* LAUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAUserCell.m; sourceTree = "<group>"; };
 		AD749B9E17838C9500E3A387 /* LAUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAUserCell.xib; sourceTree = "<group>"; };
 		AD749BA017838CA400E3A387 /* LAPostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAPostCell.xib; sourceTree = "<group>"; };
-		AD749BA217838CB500E3A387 /* LAProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAProfileView.xib; sourceTree = "<group>"; };
-		AD749BA517838CD000E3A387 /* LAProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAProfileView.h; sourceTree = "<group>"; };
-		AD749BA617838CD000E3A387 /* LAProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAProfileView.m; sourceTree = "<group>"; };
+		AD749BA217838CB500E3A387 /* LAProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAProfileHeaderView.xib; sourceTree = "<group>"; };
+		AD749BA517838CD000E3A387 /* LAProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAProfileHeaderView.h; sourceTree = "<group>"; };
+		AD749BA617838CD000E3A387 /* LAProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAProfileHeaderView.m; sourceTree = "<group>"; };
 		AD749BA817838CE400E3A387 /* LAPostCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPostCell.h; sourceTree = "<group>"; };
 		AD749BA917838CE400E3A387 /* LAPostCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAPostCell.m; sourceTree = "<group>"; };
 		AD749BAB178391B300E3A387 /* LAMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMainViewController.h; sourceTree = "<group>"; };
@@ -420,9 +420,9 @@
 		AD749B9C17838BC300E3A387 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				AD749BA517838CD000E3A387 /* LAProfileView.h */,
-				AD749BA617838CD000E3A387 /* LAProfileView.m */,
-				AD749BA217838CB500E3A387 /* LAProfileView.xib */,
+				AD749BA517838CD000E3A387 /* LAProfileHeaderView.h */,
+				AD749BA617838CD000E3A387 /* LAProfileHeaderView.m */,
+				AD749BA217838CB500E3A387 /* LAProfileHeaderView.xib */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -531,7 +531,7 @@
 				AD749B9817838A8F00E3A387 /* LAUsersViewController.xib in Resources */,
 				AD749B9F17838C9500E3A387 /* LAUserCell.xib in Resources */,
 				AD749BA117838CA400E3A387 /* LAPostCell.xib in Resources */,
-				AD749BA317838CB500E3A387 /* LAProfileView.xib in Resources */,
+				AD749BA317838CB500E3A387 /* LAProfileHeaderView.xib in Resources */,
 				AD749BAF178391B300E3A387 /* LAMainViewController.xib in Resources */,
 				AD4E3E191784AEAE0023757D /* make-post-button@2x.png in Resources */,
 				AD4E3E1B1784AEE30023757D /* make-post-button.png in Resources */,
@@ -591,7 +591,7 @@
 				AD749B921783899600E3A387 /* LAProfileViewController.m in Sources */,
 				AD749B9717838A8F00E3A387 /* LAUsersViewController.m in Sources */,
 				AD749B9B17838ACA00E3A387 /* LAUserCell.m in Sources */,
-				AD749BA717838CD000E3A387 /* LAProfileView.m in Sources */,
+				AD749BA717838CD000E3A387 /* LAProfileHeaderView.m in Sources */,
 				AD749BAA17838CE400E3A387 /* LAPostCell.m in Sources */,
 				AD749BAE178391B300E3A387 /* LAMainViewController.m in Sources */,
 				AD486AEF1784551800BBDA48 /* LAUser.m in Sources */,

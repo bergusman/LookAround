@@ -8,10 +8,12 @@
 
 #import "LAProfileViewController.h"
 
-#import "LAProfileView.h"
+#import "LAProfileHeaderView.h"
 #import "LAPostCell.h"
+#import "LAMagicButton.h"
 
 #import "LAUsersViewController.h"
+#import "LAMainViewController.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -22,22 +24,40 @@
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) LAProfileView *profileView;
+@property (strong, nonatomic) LAProfileHeaderView *profileView;
+
+@property (weak, nonatomic) IBOutlet LAMagicButton *backButton;
+@property (weak, nonatomic) IBOutlet LAMagicButton *aroundButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *backButtonTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *aroundButtonTitleLabel;
 
 @property (strong, nonatomic) NSArray *posts;
-
-
 
 @end
 
 @implementation LAProfileViewController
 
+- (id)init {
+    // To fix nib name collisions
+    self = [super initWithNibName:NSStringFromClass([LAProfileViewController class]) bundle:[NSBundle mainBundle]];
+    return self;
+}
+
 #pragma mark - UIViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setupTableView];
     [self setupProfileView];
+    [self setupLocalizableText];
+    
+    if ([self.navigationController.viewControllers count] == 1) {
+        self.backButton.hidden = YES;
+    } else {
+        self.aroundButton.hidden = YES;
+    }
     
     NSMutableArray *posts = [NSMutableArray array];
     for (int i = 0; i < 100; i++) {
@@ -56,25 +76,49 @@
 }
 
 - (void)setupProfileView {
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass([LAProfileView class]) bundle:[NSBundle mainBundle]];
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([LAProfileHeaderView class]) bundle:[NSBundle mainBundle]];
     NSArray *views = [nib instantiateWithOwner:nil options:nil];
     self.profileView = views[0];
     self.profileView.delegate = self;
     self.tableView.tableHeaderView = self.profileView;
 }
 
+- (void)setupLocalizableText {
+    self.backButtonTitleLabel.text = NSLocalizedString(@"back", @"");
+    self.aroundButtonTitleLabel.text = NSLocalizedString(@"profile.around", @"");
+}
+
+#pragma mark - Actions
+
+- (IBAction)backAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)aroundAction:(id)sender {
+    [[LAMainViewController sharedMainVC] showRight];
+}
+
 #pragma mark - LAProfileViewDelegate
 
-- (void)profileViewDidPressFollowers:(LAProfileView *)profileView {
+- (void)profileViewDidPressFollowers:(LAProfileHeaderView *)profileView {
     LAUsersViewController *usersVC = [[LAUsersViewController alloc] init];
     usersVC.title = NSLocalizedString(@"followers.title", @"");
     [self.navigationController pushViewController:usersVC animated:YES];
 }
 
-- (void)profileViewDidPressFollowing:(LAProfileView *)profileView {
+- (void)profileViewDidPressFollowing:(LAProfileHeaderView *)profileView {
     LAUsersViewController *usersVC = [[LAUsersViewController alloc] init];
     usersVC.title = NSLocalizedString(@"following.title", @"");
     [self.navigationController pushViewController:usersVC animated:YES];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    double progress = (scrollView.contentOffset.y - 10) / 40;
+    progress = MAX(MIN(progress, 1), 0);
+    self.backButton.alpha = 1 - progress;
+    self.aroundButton.alpha = 1 - progress;
 }
 
 #pragma mark - UITableViewDataSource

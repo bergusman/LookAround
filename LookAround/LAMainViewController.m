@@ -140,6 +140,14 @@ static LAMainViewController *_sharedMainVC;
     self.hideButtonOnLeft = NO;
 }
 
+- (void)showLeft {
+    [self.scrollView scrollRectToVisible:CGRectMake(0, 0, 320, 100) animated:YES];
+}
+
+- (void)showRight {
+    [self.scrollView scrollRectToVisible:CGRectMake(320, 0, 320, 100) animated:YES];
+}
+
 #pragma mark - Property Accessors
 
 - (void)setHideButtonOnLeft:(BOOL)hideButtonOnLeft {

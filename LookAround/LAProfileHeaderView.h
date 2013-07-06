@@ -10,7 +10,7 @@
 
 @protocol LAProfileViewDelegate;
 
-@interface LAProfileView : UIView
+@interface LAProfileHeaderView : UIView
 
 @property (assign, nonatomic) id<LAProfileViewDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
@@ -19,7 +19,7 @@
 
 @protocol LAProfileViewDelegate <NSObject>
 
-- (void)profileViewDidPressFollowers:(LAProfileView *)profileView;
-- (void)profileViewDidPressFollowing:(LAProfileView *)profileView;
+- (void)profileViewDidPressFollowers:(LAProfileHeaderView *)profileView;
+- (void)profileViewDidPressFollowing:(LAProfileHeaderView *)profileView;
 
 @end

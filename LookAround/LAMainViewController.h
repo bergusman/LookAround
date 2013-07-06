@@ -12,6 +12,9 @@
 
 - (void)showMe;
 
+- (void)showLeft;
+- (void)showRight;
+
 + (LAMainViewController *)sharedMainVC;
 
 @end

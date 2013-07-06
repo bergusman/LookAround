@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "LAProfileView.h"
+#import "LAProfileHeaderView.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface LAProfileView ()
+@interface LAProfileHeaderView ()
 
 @property (weak, nonatomic) IBOutlet UILabel *followersCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *followingCountLabel;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation LAProfileView
+@implementation LAProfileHeaderView
 
 - (void)awakeFromNib {
     [super awakeFromNib];
