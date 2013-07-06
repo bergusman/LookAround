@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol LAPostCellDelegate;
+
 @interface LAPostCell : UITableViewCell
+
+@property (assign, nonatomic) id<LAPostCellDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+
+@end
+
+@protocol LAPostCellDelegate <NSObject>
 
 @end

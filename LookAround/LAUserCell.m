@@ -10,4 +10,11 @@
 
 @implementation LAUserCell
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.selectedBackgroundView = [[UIView alloc] init];
+}
+
+
+
 @end

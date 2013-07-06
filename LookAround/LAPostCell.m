@@ -26,4 +26,7 @@
     }
 }
 
+- (IBAction)avatarAction:(id)sender {
+}
+
 @end
