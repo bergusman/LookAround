@@ -17,4 +17,6 @@
 
 + (LAMainViewController *)sharedMainVC;
 
+- (void)setMakePostButtonHidden:(BOOL)hidden animated:(BOOL)animated;
+
 @end

@@ -148,6 +148,23 @@ static LAMainViewController *_sharedMainVC;
     [self.scrollView scrollRectToVisible:CGRectMake(320, 0, 320, 100) animated:YES];
 }
 
+- (void)setMakePostButtonHidden:(BOOL)hidden animated:(BOOL)animated {
+    if (animated) {
+        if (!hidden) {
+            self.makePostButton.alpha = 0;
+            self.makePostButton.hidden = NO;
+        }
+        
+        [UIView animateWithDuration:0.2 animations:^{
+            self.makePostButton.alpha = (hidden ? 0 : 1);
+        } completion:^(BOOL finished) {
+            self.makePostButton.hidden = hidden;
+        }];
+    } else {
+        self.makePostButton.hidden = hidden;
+    }
+}
+
 #pragma mark - Property Accessors
 
 - (void)setHideButtonOnLeft:(BOOL)hideButtonOnLeft {

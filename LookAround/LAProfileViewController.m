@@ -168,15 +168,24 @@
     postVC.photoImageView = cell.photoImageView;
     
     __weak LAPostViewController *weakPostVC = postVC;
+    
+    [[LAMainViewController sharedMainVC] setMakePostButtonHidden:YES animated:YES];
 
     postVC.closeHandler = ^() {
-        [self dismissViewControllerAnimated:NO completion:nil];
+        [[LAMainViewController sharedMainVC] setMakePostButtonHidden:NO animated:YES];
         
-        CGRect rect = [imageViewSuperview convertRect:imageView.frame fromView:weakPostVC.view];
+        CGRect rect = [self.view convertRect:imageView.frame fromView:weakPostVC.view];
         imageView.frame = rect;
         
-        [imageViewSuperview addSubview:imageView];
+        rect = [imageViewSuperview convertRect:frame toView:self.view];
+        
+        [self.view addSubview:imageView];
+        
         [UIView animateWithDuration:0.2 animations:^{
+            imageView.frame = rect;
+            
+        } completion:^(BOOL finished) {
+            [imageViewSuperview addSubview:imageView];
             imageView.frame = frame;
         }];
         
