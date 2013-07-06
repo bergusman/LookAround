@@ -10,29 +10,38 @@
 
 @interface LAPostViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
+@property (weak, nonatomic) IBOutlet UIButton *photoButton;
+
 @end
 
 @implementation LAPostViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)go {
+    self.contentView.alpha = 0;
+    [UIView animateWithDuration:0.2 animations:^{
+        self.contentView.alpha = 1;
+        self.photoImageView.frame = CGRectMake(0, 0, 320, 320);
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (void)setPhotoImageView:(UIImageView *)photoImageView {
+    _photoImageView = photoImageView;
+    [self.view addSubview:photoImageView];
+    [self.view bringSubviewToFront:self.photoButton];
+}
+
+- (IBAction)photoAction:(id)sender {
+    if (self.closeHandler) {
+        self.closeHandler();
+    }
 }
 
 @end

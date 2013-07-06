@@ -27,7 +27,6 @@
     }
     
     [self addChildViewController:viewController];
-    
     [self.view addSubview:viewController.view];
     [viewController didMoveToParentViewController:self];
     

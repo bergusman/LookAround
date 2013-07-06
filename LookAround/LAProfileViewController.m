@@ -14,13 +14,15 @@
 
 #import "LAUsersViewController.h"
 #import "LAMainViewController.h"
+#import "LAPostViewController.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface LAProfileViewController () <
     UITableViewDataSource,
     UITableViewDelegate,
-    LAProfileViewDelegate
+    LAProfileViewDelegate,
+    LAPostCellDelegate
 >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -112,6 +114,14 @@
     [self.navigationController pushViewController:usersVC animated:YES];
 }
 
+#pragma mark - LAPostCellDelegate
+
+- (void)postCellDidTouchAvatar:(LAPostCell *)cell {
+    //NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    LAProfileViewController *profileVC = [[LAProfileViewController alloc] init];
+    [self.navigationController pushViewController:profileVC animated:YES];
+}
+
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -130,6 +140,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"PostCell";
     LAPostCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.delegate = self;
     
     [cell.photoImageView setImageWithURL:[NSURL URLWithString:@"http://farm4.staticflickr.com/3020/5716375186_28e9da194f_b.jpg"]];
     [cell.avatarImageView setImageWithURL:[NSURL URLWithString:@"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg"]];
@@ -140,6 +151,41 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LAPostViewController *postVC = [[LAPostViewController alloc] init];
+    
+    [self addChildViewController:postVC];
+    [self.view addSubview:postVC.view];
+    [postVC didMoveToParentViewController:self];
+    
+    
+    LAPostCell *cell = (LAPostCell *)[tableView cellForRowAtIndexPath:indexPath];
+    UIImageView *imageView = cell.photoImageView;
+    UIView *imageViewSuperview = imageView.superview;
+    CGRect frame = imageView.frame;
+    CGRect rect = [imageView convertRect:imageView.bounds toView:self.view];
+    imageView.frame = rect;
+    
+    postVC.photoImageView = cell.photoImageView;
+    
+    __weak LAPostViewController *weakPostVC = postVC;
+
+    postVC.closeHandler = ^() {
+        [self dismissViewControllerAnimated:NO completion:nil];
+        
+        CGRect rect = [imageViewSuperview convertRect:imageView.frame fromView:weakPostVC.view];
+        imageView.frame = rect;
+        
+        [imageViewSuperview addSubview:imageView];
+        [UIView animateWithDuration:0.2 animations:^{
+            imageView.frame = frame;
+        }];
+        
+        [weakPostVC willMoveToParentViewController:nil];
+        [weakPostVC.view removeFromSuperview];
+        [weakPostVC removeFromParentViewController];
+    };
+    
+    [postVC go];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

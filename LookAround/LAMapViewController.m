@@ -8,6 +8,8 @@
 
 #import "LAMapViewController.h"
 
+#import "LAMainViewController.h"
+
 #import <MapKit/MapKit.h>
 
 @interface LAMapViewController ()
@@ -23,6 +25,8 @@
     [self moveLegal];
 }
 
+#pragma mark - Helpers
+
 - (void)moveLegal {
     for (UIView *view in self.mapView.subviews) {
         if ([view isKindOfClass:[UILabel class]]) {
@@ -31,6 +35,12 @@
             view.frame = frame;
         }
     }
+}
+
+#pragma mark - Actions
+
+- (IBAction)leftAction:(id)sender {
+    [[LAMainViewController sharedMainVC] showLeft];
 }
 
 @end

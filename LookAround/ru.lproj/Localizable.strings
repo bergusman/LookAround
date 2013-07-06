@@ -22,3 +22,6 @@
 "following.title" = "Подписан";
 
 "make_post.gallery" = "Галлерея";
+
+"post.comment.send" = "Отпр.";
+"post.comment.placeholder" = "Комментарий";

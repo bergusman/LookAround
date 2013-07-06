@@ -22,3 +22,6 @@
 "following.title" = "Following";
 
 "make_post.gallery" = "Gallery";
+
+"post.comment.send" = "Send";
+"post.comment.placeholder" = "Message";

@@ -21,4 +21,7 @@
 
 @protocol LAPostCellDelegate <NSObject>
 
+@optional
+- (void)postCellDidTouchAvatar:(LAPostCell *)cell;
+
 @end

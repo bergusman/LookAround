@@ -27,6 +27,11 @@
 }
 
 - (IBAction)avatarAction:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(postCellDidTouchAvatar:)]) {
+        [self.delegate postCellDidTouchAvatar:self];
+    }
 }
+
+
 
 @end

@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^LAPostCloseHandler)();
+
 @interface LAPostViewController : UIViewController
+
+@property (strong, nonatomic) UIImageView *photoImageView;
+
+@property (copy, nonatomic) LAPostCloseHandler closeHandler;
+
+- (void)go;
 
 @end

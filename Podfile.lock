@@ -1,5 +1,6 @@
 PODS:
   - Facebook-iOS-SDK (3.5.3)
+  - HPGrowingTextView (0.0.1)
   - libwebp (0.3.0-rc7):
     - libwebp/dec
     - libwebp/dsp
@@ -17,10 +18,12 @@ PODS:
 
 DEPENDENCIES:
   - Facebook-iOS-SDK (~> 3.5.3)
+  - HPGrowingTextView (~> 0.0.1)
   - SDWebImage (~> 3.3)
 
 SPEC CHECKSUMS:
   Facebook-iOS-SDK: c11e851555d8cb8b55853ec2990b01d9e343d09e
+  HPGrowingTextView: 42fee2f684a8c98e61bc19579d274d7fc12b48ca
   libwebp: 40517fa1fd3716eded73b4696c45fc0b66e4b414
   SDWebImage: 79a8bac9ccf85b269100b294f7b43684dab8bf8a
 
