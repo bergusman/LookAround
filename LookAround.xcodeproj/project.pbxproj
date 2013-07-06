@@ -34,8 +34,8 @@
 		AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B8117837CE700E3A387 /* NSData+LAHex.m */; };
 		AD749B8A1783839300E3A387 /* LALogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B881783839300E3A387 /* LALogInViewController.m */; };
 		AD749B8B1783839300E3A387 /* LALogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B891783839300E3A387 /* LALogInViewController.xib */; };
-		AD749B921783899600E3A387 /* LAMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B901783899600E3A387 /* LAMeViewController.m */; };
-		AD749B931783899600E3A387 /* LAMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B911783899600E3A387 /* LAMeViewController.xib */; };
+		AD749B921783899600E3A387 /* LAProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B901783899600E3A387 /* LAProfileViewController.m */; };
+		AD749B931783899600E3A387 /* LAProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B911783899600E3A387 /* LAProfileViewController.xib */; };
 		AD749B9717838A8F00E3A387 /* LAUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B9517838A8F00E3A387 /* LAUsersViewController.m */; };
 		AD749B9817838A8F00E3A387 /* LAUsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B9617838A8F00E3A387 /* LAUsersViewController.xib */; };
 		AD749B9B17838ACA00E3A387 /* LAUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B9A17838ACA00E3A387 /* LAUserCell.m */; };
@@ -101,9 +101,9 @@
 		AD749B871783839300E3A387 /* LALogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALogInViewController.h; sourceTree = "<group>"; };
 		AD749B881783839300E3A387 /* LALogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALogInViewController.m; sourceTree = "<group>"; };
 		AD749B891783839300E3A387 /* LALogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LALogInViewController.xib; sourceTree = "<group>"; };
-		AD749B8F1783899600E3A387 /* LAMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMeViewController.h; sourceTree = "<group>"; };
-		AD749B901783899600E3A387 /* LAMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMeViewController.m; sourceTree = "<group>"; };
-		AD749B911783899600E3A387 /* LAMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMeViewController.xib; sourceTree = "<group>"; };
+		AD749B8F1783899600E3A387 /* LAProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAProfileViewController.h; sourceTree = "<group>"; };
+		AD749B901783899600E3A387 /* LAProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAProfileViewController.m; sourceTree = "<group>"; };
+		AD749B911783899600E3A387 /* LAProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAProfileViewController.xib; sourceTree = "<group>"; };
 		AD749B9417838A8F00E3A387 /* LAUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAUsersViewController.h; sourceTree = "<group>"; };
 		AD749B9517838A8F00E3A387 /* LAUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAUsersViewController.m; sourceTree = "<group>"; };
 		AD749B9617838A8F00E3A387 /* LAUsersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAUsersViewController.xib; sourceTree = "<group>"; };
@@ -380,9 +380,9 @@
 		AD749B841783837400E3A387 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				AD749B8F1783899600E3A387 /* LAMeViewController.h */,
-				AD749B901783899600E3A387 /* LAMeViewController.m */,
-				AD749B911783899600E3A387 /* LAMeViewController.xib */,
+				AD749B8F1783899600E3A387 /* LAProfileViewController.h */,
+				AD749B901783899600E3A387 /* LAProfileViewController.m */,
+				AD749B911783899600E3A387 /* LAProfileViewController.xib */,
 			);
 			name = Me;
 			sourceTree = "<group>";
@@ -527,7 +527,7 @@
 				AD2FC79617836E7100DB308E /* Default-568h@2x.png in Resources */,
 				AD749B7B1783762200E3A387 /* LAMapViewController.xib in Resources */,
 				AD749B8B1783839300E3A387 /* LALogInViewController.xib in Resources */,
-				AD749B931783899600E3A387 /* LAMeViewController.xib in Resources */,
+				AD749B931783899600E3A387 /* LAProfileViewController.xib in Resources */,
 				AD749B9817838A8F00E3A387 /* LAUsersViewController.xib in Resources */,
 				AD749B9F17838C9500E3A387 /* LAUserCell.xib in Resources */,
 				AD749BA117838CA400E3A387 /* LAPostCell.xib in Resources */,
@@ -588,7 +588,7 @@
 				AD749B7A1783762200E3A387 /* LAMapViewController.m in Sources */,
 				AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */,
 				AD749B8A1783839300E3A387 /* LALogInViewController.m in Sources */,
-				AD749B921783899600E3A387 /* LAMeViewController.m in Sources */,
+				AD749B921783899600E3A387 /* LAProfileViewController.m in Sources */,
 				AD749B9717838A8F00E3A387 /* LAUsersViewController.m in Sources */,
 				AD749B9B17838ACA00E3A387 /* LAUserCell.m in Sources */,
 				AD749BA717838CD000E3A387 /* LAProfileView.m in Sources */,

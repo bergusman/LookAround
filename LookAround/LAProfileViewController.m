@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Vitaly Berg. All rights reserved.
 //
 
-#import "LAMeViewController.h"
+#import "LAProfileViewController.h"
 
 #import "LAProfileView.h"
 #import "LAPostCell.h"
@@ -15,7 +15,7 @@
 
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface LAMeViewController () <
+@interface LAProfileViewController () <
     UITableViewDataSource,
     UITableViewDelegate,
     LAProfileViewDelegate
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation LAMeViewController
+@implementation LAProfileViewController
 
 #pragma mark - UIViewController
 

@@ -16,6 +16,7 @@
 
 "profile.followers" = "Подписчики";
 "profile.following" = "Подписан";
+"profile.around" = "Вокруг";
 
 "followers.title" = "Подписчики";
 "following.title" = "Подписан";

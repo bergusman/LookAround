@@ -9,7 +9,7 @@
 #import "LAMainViewController.h"
 
 #import "LALogInViewController.h"
-#import "LAMeViewController.h"
+#import "LAProfileViewController.h"
 #import "LAMapViewController.h"
 #import "LANavigationController.h"
 
@@ -50,7 +50,7 @@ static LAMainViewController *_sharedMainVC;
     
     
     
-    LAMeViewController *meVC = [[LAMeViewController alloc] init];
+    LAProfileViewController *meVC = [[LAProfileViewController alloc] init];
     LANavigationController *meNC = [[LANavigationController alloc] init];
     meNC.navigationBarHidden = YES;
     [meNC pushViewController:meVC animated:NO];
@@ -126,7 +126,7 @@ static LAMainViewController *_sharedMainVC;
 #pragma mark - Public methods
 
 - (void)showMe {
-    LAMeViewController *meVC = [[LAMeViewController alloc] init];
+    LAProfileViewController *meVC = [[LAProfileViewController alloc] init];
     [self addChildViewController:meVC];
     meVC.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
     [self.scrollView addSubview:meVC.view];

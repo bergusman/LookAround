@@ -8,7 +8,7 @@
 
 #import "LAUsersViewController.h"
 
-#import "LAMeViewController.h"
+#import "LAProfileViewController.h"
 
 #import "LAUserCell.h"
 
@@ -101,7 +101,7 @@
 #pragma mark - UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    LAMeViewController *meVC = [[LAMeViewController alloc] init];
+    LAProfileViewController *meVC = [[LAProfileViewController alloc] init];
     [self.navigationController pushViewController:meVC animated:YES];
 }
 

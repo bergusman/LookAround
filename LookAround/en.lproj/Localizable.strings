@@ -16,6 +16,7 @@
 
 "profile.followers" = "Followers";
 "profile.following" = "Following";
+"profile.around" = "Around";
 
 "followers.title" = "Followers";
 "following.title" = "Following";

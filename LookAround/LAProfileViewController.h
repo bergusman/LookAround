@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LAMeViewController : UIViewController
+@interface LAProfileViewController : UIViewController
 
 @end
