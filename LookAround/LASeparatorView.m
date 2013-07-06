@@ -26,9 +26,9 @@
     [_strokeColor setFill];
     
     if (self.bottom) {
-        UIRectFill(CGRectMake(0, 0, size.width, 0.5));
-    } else {
         UIRectFill(CGRectMake(0, size.height - 0.5, size.width, 0.5));
+    } else {
+        UIRectFill(CGRectMake(0, 0, size.width, 0.5));
     }
 }
 
