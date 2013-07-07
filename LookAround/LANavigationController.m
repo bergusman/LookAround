@@ -97,8 +97,15 @@
         [pan setTranslation:CGPointZero inView:topVC.view];
     }
     else if (pan.state == UIGestureRecognizerStateEnded || pan.state == UIGestureRecognizerStateCancelled) {
-        if (topVC.view.x > 160) {
-            [UIView animateWithDuration:0.2 animations:^{
+        CGPoint velocity = [pan velocityInView:topVC.view];
+        NSLog(@"%f", velocity.x);
+        
+        if (topVC.view.x > 160 || velocity.x > 100) {
+            NSTimeInterval duration = 0.2;
+            
+            
+            
+            [UIView animateWithDuration:duration animations:^{
                 topVC.view.x = 320;
                 prevVC.view.x = 0;
             } completion:^(BOOL finished) {

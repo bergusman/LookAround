@@ -57,6 +57,10 @@
 		AD857FB017869B9200803C8A /* take-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857FAE17869B9200803C8A /* take-photo.png */; };
 		AD857FB117869B9200803C8A /* take-photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857FAF17869B9200803C8A /* take-photo@2x.png */; };
 		AD86E9CB17894B98008A617D /* LARoundCoveredImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD86E9CA17894B98008A617D /* LARoundCoveredImageView.m */; };
+		AD8F7FC217896ABC004225F8 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FBE17896ABC004225F8 /* Icon-72.png */; };
+		AD8F7FC317896ABC004225F8 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FBF17896ABC004225F8 /* Icon-72@2x.png */; };
+		AD8F7FC417896ABC004225F8 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FC017896ABC004225F8 /* Icon-Small-50.png */; };
+		AD8F7FC517896ABC004225F8 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FC117896ABC004225F8 /* Icon-Small-50@2x.png */; };
 		ADCD461B178953F0007FA354 /* LAImageStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD461A178953F0007FA354 /* LAImageStubs.m */; };
 		ADCD461D17895473007FA354 /* photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461C17895473007FA354 /* photos.plist */; };
 		ADCD461F178955FA007FA354 /* avatars.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461E178955FA007FA354 /* avatars.plist */; };
@@ -146,6 +150,10 @@
 		AD857FAF17869B9200803C8A /* take-photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "take-photo@2x.png"; path = "Images/take-photo@2x.png"; sourceTree = "<group>"; };
 		AD86E9C917894B98008A617D /* LARoundCoveredImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARoundCoveredImageView.h; sourceTree = "<group>"; };
 		AD86E9CA17894B98008A617D /* LARoundCoveredImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARoundCoveredImageView.m; sourceTree = "<group>"; };
+		AD8F7FBE17896ABC004225F8 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		AD8F7FBF17896ABC004225F8 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		AD8F7FC017896ABC004225F8 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		AD8F7FC117896ABC004225F8 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		ADCD4619178953F0007FA354 /* LAImageStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAImageStubs.h; sourceTree = "<group>"; };
 		ADCD461A178953F0007FA354 /* LAImageStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAImageStubs.m; sourceTree = "<group>"; };
 		ADCD461C17895473007FA354 /* photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photos.plist; sourceTree = "<group>"; };
@@ -311,10 +319,14 @@
 		AD2FC7A817836F0A00DB308E /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				ADCD462117895CA4007FA354 /* Icon-Small.png */,
-				ADCD462217895CA4007FA354 /* Icon-Small@2x.png */,
 				ADCD462317895CA4007FA354 /* Icon.png */,
 				ADCD462417895CA4007FA354 /* Icon@2x.png */,
+				ADCD462117895CA4007FA354 /* Icon-Small.png */,
+				ADCD462217895CA4007FA354 /* Icon-Small@2x.png */,
+				AD8F7FBE17896ABC004225F8 /* Icon-72.png */,
+				AD8F7FBF17896ABC004225F8 /* Icon-72@2x.png */,
+				AD8F7FC017896ABC004225F8 /* Icon-Small-50.png */,
+				AD8F7FC117896ABC004225F8 /* Icon-Small-50@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -585,6 +597,10 @@
 				ADCD462617895CA4007FA354 /* Icon-Small@2x.png in Resources */,
 				ADCD462717895CA4007FA354 /* Icon.png in Resources */,
 				ADCD462817895CA4007FA354 /* Icon@2x.png in Resources */,
+				AD8F7FC217896ABC004225F8 /* Icon-72.png in Resources */,
+				AD8F7FC317896ABC004225F8 /* Icon-72@2x.png in Resources */,
+				AD8F7FC417896ABC004225F8 /* Icon-Small-50.png in Resources */,
+				AD8F7FC517896ABC004225F8 /* Icon-Small-50@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
