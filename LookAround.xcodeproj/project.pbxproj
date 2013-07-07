@@ -56,6 +56,14 @@
 		AD857FA01786044E00803C8A /* LADottedSeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */; };
 		AD857FB017869B9200803C8A /* take-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857FAE17869B9200803C8A /* take-photo.png */; };
 		AD857FB117869B9200803C8A /* take-photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD857FAF17869B9200803C8A /* take-photo@2x.png */; };
+		AD86E9CB17894B98008A617D /* LARoundCoveredImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD86E9CA17894B98008A617D /* LARoundCoveredImageView.m */; };
+		ADCD461B178953F0007FA354 /* LAImageStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD461A178953F0007FA354 /* LAImageStubs.m */; };
+		ADCD461D17895473007FA354 /* photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461C17895473007FA354 /* photos.plist */; };
+		ADCD461F178955FA007FA354 /* avatars.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461E178955FA007FA354 /* avatars.plist */; };
+		ADCD462517895CA4007FA354 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCD462117895CA4007FA354 /* Icon-Small.png */; };
+		ADCD462617895CA4007FA354 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCD462217895CA4007FA354 /* Icon-Small@2x.png */; };
+		ADCD462717895CA4007FA354 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCD462317895CA4007FA354 /* Icon.png */; };
+		ADCD462817895CA4007FA354 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCD462417895CA4007FA354 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +144,16 @@
 		AD857F9F1786044E00803C8A /* LADottedSeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADottedSeparatorView.m; sourceTree = "<group>"; };
 		AD857FAE17869B9200803C8A /* take-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "take-photo.png"; path = "Images/take-photo.png"; sourceTree = "<group>"; };
 		AD857FAF17869B9200803C8A /* take-photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "take-photo@2x.png"; path = "Images/take-photo@2x.png"; sourceTree = "<group>"; };
+		AD86E9C917894B98008A617D /* LARoundCoveredImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARoundCoveredImageView.h; sourceTree = "<group>"; };
+		AD86E9CA17894B98008A617D /* LARoundCoveredImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARoundCoveredImageView.m; sourceTree = "<group>"; };
+		ADCD4619178953F0007FA354 /* LAImageStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAImageStubs.h; sourceTree = "<group>"; };
+		ADCD461A178953F0007FA354 /* LAImageStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAImageStubs.m; sourceTree = "<group>"; };
+		ADCD461C17895473007FA354 /* photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photos.plist; sourceTree = "<group>"; };
+		ADCD461E178955FA007FA354 /* avatars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = avatars.plist; sourceTree = "<group>"; };
+		ADCD462117895CA4007FA354 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		ADCD462217895CA4007FA354 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		ADCD462317895CA4007FA354 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ADCD462417895CA4007FA354 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,13 +171,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		445C8ABF17870B8C003D783C /* Navigation Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Navigation Controller";
-			sourceTree = "<group>";
-		};
 		445C8AC017870C23003D783C /* Navigation Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +263,8 @@
 				AD486AEE1784551800BBDA48 /* LAUser.m */,
 				AD486AF01784553100BBDA48 /* LAPost.h */,
 				AD486AF11784553100BBDA48 /* LAPost.m */,
+				ADCD4619178953F0007FA354 /* LAImageStubs.h */,
+				ADCD461A178953F0007FA354 /* LAImageStubs.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -259,7 +272,6 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				445C8ABF17870B8C003D783C /* Navigation Controller */,
 				AD857F9A178600D700803C8A /* Separator View */,
 				AD857F961785F42700803C8A /* Rounded Image View */,
 				AD857F8517854AB900803C8A /* Magic Button */,
@@ -299,6 +311,10 @@
 		AD2FC7A817836F0A00DB308E /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				ADCD462117895CA4007FA354 /* Icon-Small.png */,
+				ADCD462217895CA4007FA354 /* Icon-Small@2x.png */,
+				ADCD462317895CA4007FA354 /* Icon.png */,
+				ADCD462417895CA4007FA354 /* Icon@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -358,6 +374,8 @@
 			isa = PBXGroup;
 			children = (
 				AD4E3E2D1784C2BE0023757D /* Users.json */,
+				ADCD461C17895473007FA354 /* photos.plist */,
+				ADCD461E178955FA007FA354 /* avatars.plist */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -467,6 +485,8 @@
 			children = (
 				AD857F971785F44800803C8A /* LARoundedImageView.h */,
 				AD857F981785F44800803C8A /* LARoundedImageView.m */,
+				AD86E9C917894B98008A617D /* LARoundCoveredImageView.h */,
+				AD86E9CA17894B98008A617D /* LARoundCoveredImageView.m */,
 			);
 			name = "Rounded Image View";
 			sourceTree = "<group>";
@@ -559,6 +579,12 @@
 				AD857FB017869B9200803C8A /* take-photo.png in Resources */,
 				AD857FB117869B9200803C8A /* take-photo@2x.png in Resources */,
 				449AD4CB1788955C0075CF50 /* LAPostViewController.xib in Resources */,
+				ADCD461D17895473007FA354 /* photos.plist in Resources */,
+				ADCD461F178955FA007FA354 /* avatars.plist in Resources */,
+				ADCD462517895CA4007FA354 /* Icon-Small.png in Resources */,
+				ADCD462617895CA4007FA354 /* Icon-Small@2x.png in Resources */,
+				ADCD462717895CA4007FA354 /* Icon.png in Resources */,
+				ADCD462817895CA4007FA354 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +649,8 @@
 				AD857FA01786044E00803C8A /* LADottedSeparatorView.m in Sources */,
 				445C8AC317870C3D003D783C /* LANavigationController.m in Sources */,
 				449AD4CA1788955C0075CF50 /* LAPostViewController.m in Sources */,
+				AD86E9CB17894B98008A617D /* LARoundCoveredImageView.m in Sources */,
+				ADCD461B178953F0007FA354 /* LAImageStubs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

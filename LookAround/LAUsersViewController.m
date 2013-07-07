@@ -41,34 +41,11 @@
     self.titleLabel.text = self.title;
     self.backButtonTitleLabel.text = NSLocalizedString(@"back", @"");
     
-    self.users = @[
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-        @"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg",
-        @"http://cs9192.vk.me/v9192123/238a/SRRQUIgFW5w.jpg",
-    ];
+    NSMutableArray *users = [NSMutableArray array];
+    for (int i = 0; i < 10; i++) {
+        [users addObjectsFromArray:[[LAImageStubs sharedImageStubs] avatars]];
+    }
+    self.users = users;
 }
 
 #pragma mark - Setups

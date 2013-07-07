@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class LAUser;
+
 @interface LAProfileViewController : UIViewController
+
+@property (strong, nonatomic) LAUser *user;
 
 @end

@@ -13,6 +13,7 @@
     #import <Foundation/Foundation.h>
 
     #import "UIView+LAFrame.h"
+    #import "LAImageStubs.h"
 
     #define IS_IPHONE_5 (fabs((double)[UIScreen mainScreen].bounds.size.height - (double)568) < DBL_EPSILON)
     #define LA_RGB(r, g, b) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]

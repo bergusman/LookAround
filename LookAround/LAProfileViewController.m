@@ -62,8 +62,8 @@
     }
     
     NSMutableArray *posts = [NSMutableArray array];
-    for (int i = 0; i < 100; i++) {
-        [posts addObject:@"Bingo"];
+    for (int i = 0; i < 10; i++) {
+        [posts addObjectsFromArray:[[LAImageStubs sharedImageStubs] photos]];
     }
     self.posts = posts;
     
@@ -142,7 +142,9 @@
     LAPostCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     cell.delegate = self;
     
-    [cell.photoImageView setImageWithURL:[NSURL URLWithString:@"http://farm4.staticflickr.com/3020/5716375186_28e9da194f_b.jpg"]];
+    NSString *photoUrl = self.posts[indexPath.row];
+    
+    [cell.photoImageView setImageWithURL:[NSURL URLWithString:photoUrl]];
     [cell.avatarImageView setImageWithURL:[NSURL URLWithString:@"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg"]];
     
     return cell;
