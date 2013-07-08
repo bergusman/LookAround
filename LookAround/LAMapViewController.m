@@ -10,19 +10,44 @@
 
 #import "LAMainViewController.h"
 
+#import "LAPostCell.h"
+
 #import <MapKit/MapKit.h>
 
-@interface LAMapViewController ()
+#import <SDWebImage/UIImageView+WebCache.h>
+
+@interface LAMapViewController () <
+    MKMapViewDelegate,
+    UITableViewDataSource,
+    UITableViewDelegate,
+    LAPostCellDelegate
+>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+
+@property (strong, nonatomic) NSArray *posts;
 @end
 
 @implementation LAMapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setupTableView];
+    
     [self moveLegal];
+    
+    
+    self.tableView.userInteractionEnabled = YES;
+}
+
+#pragma mark - Setups
+
+- (void)setupTableView {
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([LAPostCell class]) bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"PostCell"];
 }
 
 #pragma mark - Helpers
@@ -41,6 +66,46 @@
 
 - (IBAction)leftAction:(id)sender {
     [[LAMainViewController sharedMainVC] showLeft];
+}
+
+- (IBAction)tap:(id)sender {
+    self.tableView.userInteractionEnabled = NO;
+    [self.tableView setContentOffset:CGPointMake(0, -550) animated:YES];
+}
+
+- (IBAction)feedAction:(id)sender {
+    self.tableView.userInteractionEnabled = YES;
+    [self.tableView setContentOffset:CGPointMake(0, -140) animated:YES];
+}
+
+#pragma mark - MKMapViewDelegate
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellIdentifier = @"PostCell";
+    LAPostCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.delegate = self;
+    
+    cell.backgroundColor = [UIColor whiteColor];
+    //NSString *photoUrl = self.posts[indexPath.row];
+    
+    NSString *photoUrl = @"http://farm4.staticflickr.com/3020/5716375186_28e9da194f_b.jpg";
+    
+    [cell.photoImageView setImageWithURL:[NSURL URLWithString:photoUrl]];
+    [cell.avatarImageView setImageWithURL:[NSURL URLWithString:@"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg"]];
+    
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 500;
 }
 
 @end
