@@ -31,6 +31,14 @@
 		AD4E3E281784B3060023757D /* LAMakePostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4E3E261784B3060023757D /* LAMakePostViewController.xib */; };
 		AD4E3E2B1784BCA10023757D /* UIView+LAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4E3E2A1784BCA10023757D /* UIView+LAFrame.m */; };
 		AD4E3E2E1784C2BE0023757D /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = AD4E3E2D1784C2BE0023757D /* Users.json */; };
+		AD5BBDE41790BDBC001E0330 /* LAMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBDE21790BDBC001E0330 /* LAMenuViewController.m */; };
+		AD5BBDE51790BDBC001E0330 /* LAMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDE31790BDBC001E0330 /* LAMenuViewController.xib */; };
+		AD5BBDE91790BF15001E0330 /* LAMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBDE81790BF15001E0330 /* LAMenuItemCell.m */; };
+		AD5BBDEB1790BFD5001E0330 /* LAMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDEA1790BFD5001E0330 /* LAMenuItemCell.xib */; };
+		AD5BBDF01790C377001E0330 /* LADialogsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBDEE1790C377001E0330 /* LADialogsViewController.m */; };
+		AD5BBDF11790C377001E0330 /* LADialogsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDEF1790C377001E0330 /* LADialogsViewController.xib */; };
+		AD5BBDF51790C594001E0330 /* LADialogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBDF41790C594001E0330 /* LADialogCell.m */; };
+		AD5BBDF71790C5A7001E0330 /* LADialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDF61790C5A7001E0330 /* LADialogCell.xib */; };
 		AD749B7A1783762200E3A387 /* LAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B781783762200E3A387 /* LAMapViewController.m */; };
 		AD749B7B1783762200E3A387 /* LAMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B791783762200E3A387 /* LAMapViewController.xib */; };
 		AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B8117837CE700E3A387 /* NSData+LAHex.m */; };
@@ -110,6 +118,18 @@
 		AD4E3E291784BCA10023757D /* UIView+LAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LAFrame.h"; sourceTree = "<group>"; };
 		AD4E3E2A1784BCA10023757D /* UIView+LAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LAFrame.m"; sourceTree = "<group>"; };
 		AD4E3E2D1784C2BE0023757D /* Users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		AD5BBDE11790BDBC001E0330 /* LAMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMenuViewController.h; sourceTree = "<group>"; };
+		AD5BBDE21790BDBC001E0330 /* LAMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMenuViewController.m; sourceTree = "<group>"; };
+		AD5BBDE31790BDBC001E0330 /* LAMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMenuViewController.xib; sourceTree = "<group>"; };
+		AD5BBDE71790BF15001E0330 /* LAMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMenuItemCell.h; sourceTree = "<group>"; };
+		AD5BBDE81790BF15001E0330 /* LAMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMenuItemCell.m; sourceTree = "<group>"; };
+		AD5BBDEA1790BFD5001E0330 /* LAMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMenuItemCell.xib; sourceTree = "<group>"; };
+		AD5BBDED1790C377001E0330 /* LADialogsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADialogsViewController.h; sourceTree = "<group>"; };
+		AD5BBDEE1790C377001E0330 /* LADialogsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADialogsViewController.m; sourceTree = "<group>"; };
+		AD5BBDEF1790C377001E0330 /* LADialogsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LADialogsViewController.xib; sourceTree = "<group>"; };
+		AD5BBDF31790C594001E0330 /* LADialogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADialogCell.h; sourceTree = "<group>"; };
+		AD5BBDF41790C594001E0330 /* LADialogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADialogCell.m; sourceTree = "<group>"; };
+		AD5BBDF61790C5A7001E0330 /* LADialogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LADialogCell.xib; sourceTree = "<group>"; };
 		AD749B771783762200E3A387 /* LAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMapViewController.h; sourceTree = "<group>"; };
 		AD749B781783762200E3A387 /* LAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMapViewController.m; sourceTree = "<group>"; };
 		AD749B791783762200E3A387 /* LAMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMapViewController.xib; sourceTree = "<group>"; };
@@ -280,6 +300,8 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BBDF21790C57A001E0330 /* Dialog Cell */,
+				AD5BBDE61790BE57001E0330 /* Menu Item Cell */,
 				AD857F9A178600D700803C8A /* Separator View */,
 				AD857F961785F42700803C8A /* Rounded Image View */,
 				AD857F8517854AB900803C8A /* Magic Button */,
@@ -293,6 +315,8 @@
 		AD2FC7A517836ECA00DB308E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BBDEC1790C319001E0330 /* Dialogs */,
+				AD5BBDDF1790BD99001E0330 /* Menu */,
 				449AD4C5178895400075CF50 /* Post */,
 				445C8AC017870C23003D783C /* Navigation Controller */,
 				AD4E3E231784B2F50023757D /* Make Post */,
@@ -390,6 +414,46 @@
 				ADCD461E178955FA007FA354 /* avatars.plist */,
 			);
 			name = Stubs;
+			sourceTree = "<group>";
+		};
+		AD5BBDDF1790BD99001E0330 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBDE11790BDBC001E0330 /* LAMenuViewController.h */,
+				AD5BBDE21790BDBC001E0330 /* LAMenuViewController.m */,
+				AD5BBDE31790BDBC001E0330 /* LAMenuViewController.xib */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		AD5BBDE61790BE57001E0330 /* Menu Item Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBDE71790BF15001E0330 /* LAMenuItemCell.h */,
+				AD5BBDE81790BF15001E0330 /* LAMenuItemCell.m */,
+				AD5BBDEA1790BFD5001E0330 /* LAMenuItemCell.xib */,
+			);
+			name = "Menu Item Cell";
+			sourceTree = "<group>";
+		};
+		AD5BBDEC1790C319001E0330 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBDED1790C377001E0330 /* LADialogsViewController.h */,
+				AD5BBDEE1790C377001E0330 /* LADialogsViewController.m */,
+				AD5BBDEF1790C377001E0330 /* LADialogsViewController.xib */,
+			);
+			name = Dialogs;
+			sourceTree = "<group>";
+		};
+		AD5BBDF21790C57A001E0330 /* Dialog Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBDF31790C594001E0330 /* LADialogCell.h */,
+				AD5BBDF41790C594001E0330 /* LADialogCell.m */,
+				AD5BBDF61790C5A7001E0330 /* LADialogCell.xib */,
+			);
+			name = "Dialog Cell";
 			sourceTree = "<group>";
 		};
 		AD749B761783761400E3A387 /* Map */ = {
@@ -601,6 +665,10 @@
 				AD8F7FC317896ABC004225F8 /* Icon-72@2x.png in Resources */,
 				AD8F7FC417896ABC004225F8 /* Icon-Small-50.png in Resources */,
 				AD8F7FC517896ABC004225F8 /* Icon-Small-50@2x.png in Resources */,
+				AD5BBDE51790BDBC001E0330 /* LAMenuViewController.xib in Resources */,
+				AD5BBDEB1790BFD5001E0330 /* LAMenuItemCell.xib in Resources */,
+				AD5BBDF11790C377001E0330 /* LADialogsViewController.xib in Resources */,
+				AD5BBDF71790C5A7001E0330 /* LADialogCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +735,10 @@
 				449AD4CA1788955C0075CF50 /* LAPostViewController.m in Sources */,
 				AD86E9CB17894B98008A617D /* LARoundCoveredImageView.m in Sources */,
 				ADCD461B178953F0007FA354 /* LAImageStubs.m in Sources */,
+				AD5BBDE41790BDBC001E0330 /* LAMenuViewController.m in Sources */,
+				AD5BBDE91790BF15001E0330 /* LAMenuItemCell.m in Sources */,
+				AD5BBDF01790C377001E0330 /* LADialogsViewController.m in Sources */,
+				AD5BBDF51790C594001E0330 /* LADialogCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

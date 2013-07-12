@@ -11,6 +11,7 @@
 #import "LALogInViewController.h"
 #import "LAProfileViewController.h"
 #import "LAMapViewController.h"
+#import "LAMenuViewController.h"
 #import "LANavigationController.h"
 
 #import "LAMakePostViewController.h"
@@ -49,7 +50,7 @@ static LAMainViewController *_sharedMainVC;
     //self.wantsFullScreenLayout = NO;
     
     
-    
+    /*
     LAProfileViewController *meVC = [[LAProfileViewController alloc] init];
     LANavigationController *meNC = [[LANavigationController alloc] init];
     meNC.navigationBarHidden = YES;
@@ -60,6 +61,19 @@ static LAMainViewController *_sharedMainVC;
     [self.scrollView addSubview:meNC.view];
     [meNC didMoveToParentViewController:self];
     self.leftViewController = meNC;
+     */
+    
+    LAMenuViewController *menuVC = [[LAMenuViewController alloc] init];
+    LANavigationController *menuNC = [[LANavigationController alloc] init];
+    menuNC.navigationBarHidden = YES;
+    [menuNC pushViewController:menuVC animated:NO];
+    
+    [self addChildViewController:menuNC];
+    menuNC.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
+    [self.scrollView addSubview:menuNC.view];
+    [menuNC didMoveToParentViewController:self];
+    self.leftViewController = menuNC;
+    
     
     /*
     
