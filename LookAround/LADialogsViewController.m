@@ -8,6 +8,8 @@
 
 #import "LADialogsViewController.h"
 
+#import "LAPostViewController.h"
+
 #import "LADialogCell.h"
 
 @interface LADialogsViewController () <
@@ -58,10 +60,15 @@
     LADialogCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if (indexPath.row % 2) {
-        cell.avatarImageView.image = [UIImage imageNamed:@""];
+        cell.avatarImageView.image = [UIImage imageNamed:@"emma-watson-12.jpg"];
+        cell.type = LADialogCellTypeUser;
     } else {
-        
+        cell.photoImageView.image = [UIImage imageNamed:@"Bern Switzerland.jpg"];
+        cell.type = LADialogCellTypePost;
     }
+    
+    cell.read = indexPath.row % 3;
+    cell.dateLabel.text = @"Now";
     
     return cell;
 }
@@ -70,6 +77,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    LAPostViewController *postVC = [[LAPostViewController alloc] init];
+    [self.navigationController pushViewController:postVC animated:YES];
 }
 
 @end
