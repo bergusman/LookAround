@@ -10,4 +10,11 @@
 
 @interface LADialogCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
 @end

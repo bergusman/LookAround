@@ -39,6 +39,18 @@
 		AD5BBDF11790C377001E0330 /* LADialogsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDEF1790C377001E0330 /* LADialogsViewController.xib */; };
 		AD5BBDF51790C594001E0330 /* LADialogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBDF41790C594001E0330 /* LADialogCell.m */; };
 		AD5BBDF71790C5A7001E0330 /* LADialogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDF61790C5A7001E0330 /* LADialogCell.xib */; };
+		AD5BBE041790FD77001E0330 /* Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDFA1790FD77001E0330 /* Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg */; };
+		AD5BBE051790FD77001E0330 /* Emma Stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDFB1790FD77001E0330 /* Emma Stone.jpg */; };
+		AD5BBE061790FD77001E0330 /* emma-watson-12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDFC1790FD77001E0330 /* emma-watson-12.jpg */; };
+		AD5BBE071790FD77001E0330 /* Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDFD1790FD77001E0330 /* Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg */; };
+		AD5BBE081790FD77001E0330 /* Jaimie-Alexander in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDFE1790FD77001E0330 /* Jaimie-Alexander */; };
+		AD5BBE091790FD77001E0330 /* Marilyn Monroe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBDFF1790FD77001E0330 /* Marilyn Monroe.jpg */; };
+		AD5BBE0A1790FD77001E0330 /* natalie_portman_8_2_2012_Isrial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE001790FD77001E0330 /* natalie_portman_8_2_2012_Isrial.jpg */; };
+		AD5BBE0B1790FD77001E0330 /* Nicals Cage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE011790FD77001E0330 /* Nicals Cage.jpg */; };
+		AD5BBE0C1790FD77001E0330 /* Rober-downey-jr.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE021790FD77001E0330 /* Rober-downey-jr.jpeg */; };
+		AD5BBE0D1790FD77001E0330 /* Russel Crowe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE031790FD77001E0330 /* Russel Crowe.jpg */; };
+		AD5BBE101791084E001E0330 /* Bern Switzerland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE0E1791084E001E0330 /* Bern Switzerland.jpg */; };
+		AD5BBE111791084E001E0330 /* Bristle Grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE0F1791084E001E0330 /* Bristle Grass.jpg */; };
 		AD749B7A1783762200E3A387 /* LAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B781783762200E3A387 /* LAMapViewController.m */; };
 		AD749B7B1783762200E3A387 /* LAMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B791783762200E3A387 /* LAMapViewController.xib */; };
 		AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B8117837CE700E3A387 /* NSData+LAHex.m */; };
@@ -130,6 +142,18 @@
 		AD5BBDF31790C594001E0330 /* LADialogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADialogCell.h; sourceTree = "<group>"; };
 		AD5BBDF41790C594001E0330 /* LADialogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADialogCell.m; sourceTree = "<group>"; };
 		AD5BBDF61790C5A7001E0330 /* LADialogCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LADialogCell.xib; sourceTree = "<group>"; };
+		AD5BBDFA1790FD77001E0330 /* Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg"; path = "Images/Stubs/Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg"; sourceTree = "<group>"; };
+		AD5BBDFB1790FD77001E0330 /* Emma Stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Emma Stone.jpg"; path = "Images/Stubs/Emma Stone.jpg"; sourceTree = "<group>"; };
+		AD5BBDFC1790FD77001E0330 /* emma-watson-12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "emma-watson-12.jpg"; path = "Images/Stubs/emma-watson-12.jpg"; sourceTree = "<group>"; };
+		AD5BBDFD1790FD77001E0330 /* Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg"; path = "Images/Stubs/Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg"; sourceTree = "<group>"; };
+		AD5BBDFE1790FD77001E0330 /* Jaimie-Alexander */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Jaimie-Alexander"; path = "Images/Stubs/Jaimie-Alexander"; sourceTree = "<group>"; };
+		AD5BBDFF1790FD77001E0330 /* Marilyn Monroe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Marilyn Monroe.jpg"; path = "Images/Stubs/Marilyn Monroe.jpg"; sourceTree = "<group>"; };
+		AD5BBE001790FD77001E0330 /* natalie_portman_8_2_2012_Isrial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = natalie_portman_8_2_2012_Isrial.jpg; path = Images/Stubs/natalie_portman_8_2_2012_Isrial.jpg; sourceTree = "<group>"; };
+		AD5BBE011790FD77001E0330 /* Nicals Cage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Nicals Cage.jpg"; path = "Images/Stubs/Nicals Cage.jpg"; sourceTree = "<group>"; };
+		AD5BBE021790FD77001E0330 /* Rober-downey-jr.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Rober-downey-jr.jpeg"; path = "Images/Stubs/Rober-downey-jr.jpeg"; sourceTree = "<group>"; };
+		AD5BBE031790FD77001E0330 /* Russel Crowe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Russel Crowe.jpg"; path = "Images/Stubs/Russel Crowe.jpg"; sourceTree = "<group>"; };
+		AD5BBE0E1791084E001E0330 /* Bern Switzerland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Bern Switzerland.jpg"; path = "Images/Photos/Bern Switzerland.jpg"; sourceTree = "<group>"; };
+		AD5BBE0F1791084E001E0330 /* Bristle Grass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Bristle Grass.jpg"; path = "Images/Photos/Bristle Grass.jpg"; sourceTree = "<group>"; };
 		AD749B771783762200E3A387 /* LAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMapViewController.h; sourceTree = "<group>"; };
 		AD749B781783762200E3A387 /* LAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMapViewController.m; sourceTree = "<group>"; };
 		AD749B791783762200E3A387 /* LAMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMapViewController.xib; sourceTree = "<group>"; };
@@ -409,6 +433,8 @@
 		AD4E3E2C1784C2A70023757D /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BBDF91790FD3C001E0330 /* Photos */,
+				AD5BBDF81790FD31001E0330 /* Avatars */,
 				AD4E3E2D1784C2BE0023757D /* Users.json */,
 				ADCD461C17895473007FA354 /* photos.plist */,
 				ADCD461E178955FA007FA354 /* avatars.plist */,
@@ -454,6 +480,32 @@
 				AD5BBDF61790C5A7001E0330 /* LADialogCell.xib */,
 			);
 			name = "Dialog Cell";
+			sourceTree = "<group>";
+		};
+		AD5BBDF81790FD31001E0330 /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBDFA1790FD77001E0330 /* Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg */,
+				AD5BBDFB1790FD77001E0330 /* Emma Stone.jpg */,
+				AD5BBDFC1790FD77001E0330 /* emma-watson-12.jpg */,
+				AD5BBDFD1790FD77001E0330 /* Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg */,
+				AD5BBDFE1790FD77001E0330 /* Jaimie-Alexander */,
+				AD5BBDFF1790FD77001E0330 /* Marilyn Monroe.jpg */,
+				AD5BBE001790FD77001E0330 /* natalie_portman_8_2_2012_Isrial.jpg */,
+				AD5BBE011790FD77001E0330 /* Nicals Cage.jpg */,
+				AD5BBE021790FD77001E0330 /* Rober-downey-jr.jpeg */,
+				AD5BBE031790FD77001E0330 /* Russel Crowe.jpg */,
+			);
+			name = Avatars;
+			sourceTree = "<group>";
+		};
+		AD5BBDF91790FD3C001E0330 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBE0E1791084E001E0330 /* Bern Switzerland.jpg */,
+				AD5BBE0F1791084E001E0330 /* Bristle Grass.jpg */,
+			);
+			name = Photos;
 			sourceTree = "<group>";
 		};
 		AD749B761783761400E3A387 /* Map */ = {
@@ -669,6 +721,18 @@
 				AD5BBDEB1790BFD5001E0330 /* LAMenuItemCell.xib in Resources */,
 				AD5BBDF11790C377001E0330 /* LADialogsViewController.xib in Resources */,
 				AD5BBDF71790C5A7001E0330 /* LADialogCell.xib in Resources */,
+				AD5BBE041790FD77001E0330 /* Dior-Make-Up-natalie-portman-28088000-1680-1050.jpg in Resources */,
+				AD5BBE051790FD77001E0330 /* Emma Stone.jpg in Resources */,
+				AD5BBE061790FD77001E0330 /* emma-watson-12.jpg in Resources */,
+				AD5BBE071790FD77001E0330 /* Holmes-robert-downey-jr-as-sherlock-holmes-13119288-1280-1024.jpg in Resources */,
+				AD5BBE081790FD77001E0330 /* Jaimie-Alexander in Resources */,
+				AD5BBE091790FD77001E0330 /* Marilyn Monroe.jpg in Resources */,
+				AD5BBE0A1790FD77001E0330 /* natalie_portman_8_2_2012_Isrial.jpg in Resources */,
+				AD5BBE0B1790FD77001E0330 /* Nicals Cage.jpg in Resources */,
+				AD5BBE0C1790FD77001E0330 /* Rober-downey-jr.jpeg in Resources */,
+				AD5BBE0D1790FD77001E0330 /* Russel Crowe.jpg in Resources */,
+				AD5BBE101791084E001E0330 /* Bern Switzerland.jpg in Resources */,
+				AD5BBE111791084E001E0330 /* Bristle Grass.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

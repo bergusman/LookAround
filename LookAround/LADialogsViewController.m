@@ -56,6 +56,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"DialogCell";
     LADialogCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    if (indexPath.row % 2) {
+        cell.avatarImageView.image = [UIImage imageNamed:@""];
+    } else {
+        
+    }
+    
     return cell;
 }
 
