@@ -63,6 +63,8 @@ static LAMainViewController *_sharedMainVC;
     self.leftViewController = meNC;
      */
     
+    
+    /*
     LAMenuViewController *menuVC = [[LAMenuViewController alloc] init];
     LANavigationController *menuNC = [[LANavigationController alloc] init];
     menuNC.navigationBarHidden = YES;
@@ -73,9 +75,8 @@ static LAMainViewController *_sharedMainVC;
     [self.scrollView addSubview:menuNC.view];
     [menuNC didMoveToParentViewController:self];
     self.leftViewController = menuNC;
+    */
     
-    
-    /*
     
     self.hideButtonOnLeft = YES;
     
@@ -86,7 +87,7 @@ static LAMainViewController *_sharedMainVC;
     [logInVC didMoveToParentViewController:self];
     
     self.leftViewController = logInVC;
-    */
+    
     
     LAMapViewController *mapVC = [[LAMapViewController alloc] init];
     [self addChildViewController:mapVC];

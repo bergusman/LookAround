@@ -51,6 +51,8 @@
 		AD5BBE0D1790FD77001E0330 /* Russel Crowe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE031790FD77001E0330 /* Russel Crowe.jpg */; };
 		AD5BBE101791084E001E0330 /* Bern Switzerland.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE0E1791084E001E0330 /* Bern Switzerland.jpg */; };
 		AD5BBE111791084E001E0330 /* Bristle Grass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD5BBE0F1791084E001E0330 /* Bristle Grass.jpg */; };
+		AD5BBE141792155F001E0330 /* LAPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBE131792155F001E0330 /* LAPointAnnotation.m */; };
+		AD5BBE191792185B001E0330 /* LAPostAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BBE181792185B001E0330 /* LAPostAnnotationView.m */; };
 		AD749B7A1783762200E3A387 /* LAMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B781783762200E3A387 /* LAMapViewController.m */; };
 		AD749B7B1783762200E3A387 /* LAMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD749B791783762200E3A387 /* LAMapViewController.xib */; };
 		AD749B8217837CE700E3A387 /* NSData+LAHex.m in Sources */ = {isa = PBXBuildFile; fileRef = AD749B8117837CE700E3A387 /* NSData+LAHex.m */; };
@@ -81,6 +83,10 @@
 		AD8F7FC317896ABC004225F8 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FBF17896ABC004225F8 /* Icon-72@2x.png */; };
 		AD8F7FC417896ABC004225F8 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FC017896ABC004225F8 /* Icon-Small-50.png */; };
 		AD8F7FC517896ABC004225F8 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8F7FC117896ABC004225F8 /* Icon-Small-50@2x.png */; };
+		AD96EDA1179465BD005C8D32 /* LAUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD96ED9F179465BD005C8D32 /* LAUserViewController.m */; };
+		AD96EDA2179465BD005C8D32 /* LAUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDA0179465BD005C8D32 /* LAUserViewController.xib */; };
+		AD96EDA5179471AF005C8D32 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDA3179471AF005C8D32 /* logo.png */; };
+		AD96EDA6179471AF005C8D32 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDA4179471AF005C8D32 /* logo@2x.png */; };
 		ADCD461B178953F0007FA354 /* LAImageStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD461A178953F0007FA354 /* LAImageStubs.m */; };
 		ADCD461D17895473007FA354 /* photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461C17895473007FA354 /* photos.plist */; };
 		ADCD461F178955FA007FA354 /* avatars.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461E178955FA007FA354 /* avatars.plist */; };
@@ -154,6 +160,10 @@
 		AD5BBE031790FD77001E0330 /* Russel Crowe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Russel Crowe.jpg"; path = "Images/Stubs/Russel Crowe.jpg"; sourceTree = "<group>"; };
 		AD5BBE0E1791084E001E0330 /* Bern Switzerland.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Bern Switzerland.jpg"; path = "Images/Photos/Bern Switzerland.jpg"; sourceTree = "<group>"; };
 		AD5BBE0F1791084E001E0330 /* Bristle Grass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Bristle Grass.jpg"; path = "Images/Photos/Bristle Grass.jpg"; sourceTree = "<group>"; };
+		AD5BBE121792155F001E0330 /* LAPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPointAnnotation.h; sourceTree = "<group>"; };
+		AD5BBE131792155F001E0330 /* LAPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAPointAnnotation.m; sourceTree = "<group>"; };
+		AD5BBE171792185B001E0330 /* LAPostAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPostAnnotationView.h; sourceTree = "<group>"; };
+		AD5BBE181792185B001E0330 /* LAPostAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAPostAnnotationView.m; sourceTree = "<group>"; };
 		AD749B771783762200E3A387 /* LAMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAMapViewController.h; sourceTree = "<group>"; };
 		AD749B781783762200E3A387 /* LAMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAMapViewController.m; sourceTree = "<group>"; };
 		AD749B791783762200E3A387 /* LAMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAMapViewController.xib; sourceTree = "<group>"; };
@@ -198,6 +208,11 @@
 		AD8F7FBF17896ABC004225F8 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		AD8F7FC017896ABC004225F8 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		AD8F7FC117896ABC004225F8 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		AD96ED9E179465BD005C8D32 /* LAUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAUserViewController.h; sourceTree = "<group>"; };
+		AD96ED9F179465BD005C8D32 /* LAUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAUserViewController.m; sourceTree = "<group>"; };
+		AD96EDA0179465BD005C8D32 /* LAUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAUserViewController.xib; sourceTree = "<group>"; };
+		AD96EDA3179471AF005C8D32 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images/logo.png; sourceTree = "<group>"; };
+		AD96EDA4179471AF005C8D32 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "Images/logo@2x.png"; sourceTree = "<group>"; };
 		ADCD4619178953F0007FA354 /* LAImageStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAImageStubs.h; sourceTree = "<group>"; };
 		ADCD461A178953F0007FA354 /* LAImageStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAImageStubs.m; sourceTree = "<group>"; };
 		ADCD461C17895473007FA354 /* photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photos.plist; sourceTree = "<group>"; };
@@ -309,6 +324,7 @@
 		AD2FC7A317836EB700DB308E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BBE1517921568001E0330 /* Point Annotation */,
 				AD486AFB178455D900BBDA48 /* Client */,
 				AD486AF7178455A700BBDA48 /* API */,
 				AD486AED1784551800BBDA48 /* LAUser.h */,
@@ -324,6 +340,7 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BBE161792182C001E0330 /* Post Annotation */,
 				AD5BBDF21790C57A001E0330 /* Dialog Cell */,
 				AD5BBDE61790BE57001E0330 /* Menu Item Cell */,
 				AD857F9A178600D700803C8A /* Separator View */,
@@ -339,6 +356,7 @@
 		AD2FC7A517836ECA00DB308E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD96ED9D1794659C005C8D32 /* User */,
 				AD5BBDEC1790C319001E0330 /* Dialogs */,
 				AD5BBDDF1790BD99001E0330 /* Menu */,
 				449AD4C5178895400075CF50 /* Post */,
@@ -382,6 +400,8 @@
 		AD2FC7A917836F1100DB308E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AD96EDA3179471AF005C8D32 /* logo.png */,
+				AD96EDA4179471AF005C8D32 /* logo@2x.png */,
 				AD857FAE17869B9200803C8A /* take-photo.png */,
 				AD857FAF17869B9200803C8A /* take-photo@2x.png */,
 				AD4E3E1A1784AEE30023757D /* make-post-button.png */,
@@ -508,6 +528,24 @@
 			name = Photos;
 			sourceTree = "<group>";
 		};
+		AD5BBE1517921568001E0330 /* Point Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBE121792155F001E0330 /* LAPointAnnotation.h */,
+				AD5BBE131792155F001E0330 /* LAPointAnnotation.m */,
+			);
+			name = "Point Annotation";
+			sourceTree = "<group>";
+		};
+		AD5BBE161792182C001E0330 /* Post Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBE171792185B001E0330 /* LAPostAnnotationView.h */,
+				AD5BBE181792185B001E0330 /* LAPostAnnotationView.m */,
+			);
+			name = "Post Annotation";
+			sourceTree = "<group>";
+		};
 		AD749B761783761400E3A387 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,6 +668,16 @@
 			name = "Separator View";
 			sourceTree = "<group>";
 		};
+		AD96ED9D1794659C005C8D32 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				AD96ED9E179465BD005C8D32 /* LAUserViewController.h */,
+				AD96ED9F179465BD005C8D32 /* LAUserViewController.m */,
+				AD96EDA0179465BD005C8D32 /* LAUserViewController.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -733,6 +781,9 @@
 				AD5BBE0D1790FD77001E0330 /* Russel Crowe.jpg in Resources */,
 				AD5BBE101791084E001E0330 /* Bern Switzerland.jpg in Resources */,
 				AD5BBE111791084E001E0330 /* Bristle Grass.jpg in Resources */,
+				AD96EDA2179465BD005C8D32 /* LAUserViewController.xib in Resources */,
+				AD96EDA5179471AF005C8D32 /* logo.png in Resources */,
+				AD96EDA6179471AF005C8D32 /* logo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +854,9 @@
 				AD5BBDE91790BF15001E0330 /* LAMenuItemCell.m in Sources */,
 				AD5BBDF01790C377001E0330 /* LADialogsViewController.m in Sources */,
 				AD5BBDF51790C594001E0330 /* LADialogCell.m in Sources */,
+				AD5BBE141792155F001E0330 /* LAPointAnnotation.m in Sources */,
+				AD5BBE191792185B001E0330 /* LAPostAnnotationView.m in Sources */,
+				AD96EDA1179465BD005C8D32 /* LAUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

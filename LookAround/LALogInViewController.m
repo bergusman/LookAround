@@ -14,8 +14,9 @@
 
 @interface LALogInViewController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *logoView;
 @property (weak, nonatomic) IBOutlet UIButton *facebookLogInButton;
+@property (weak, nonatomic) IBOutlet UILabel *copyrightLabel;
 
 @end
 
@@ -29,16 +30,15 @@
     [self setupLocalizableText];
     
     if (!IS_IPHONE_5) {
-        CGRect frame = self.titleLabel.frame;
-        frame.origin.y = 130;
-        self.titleLabel.frame = frame;
+        self.logoView.y = 95; // TODO: choose center.y for logo view for iPhone 4
     }
 }
 
 #pragma mark - Setups
 
 - (void)setupLocalizableText {
-    [self.facebookLogInButton setTitle:NSLocalizedString(@"facebook.login.button", @"") forState:UIControlStateNormal];
+    [self.facebookLogInButton setTitle:NSLocalizedString(@"login.facebook.button", @"") forState:UIControlStateNormal];
+    self.copyrightLabel.text = NSLocalizedString(@"login.copyright", @"");
 }
 
 #pragma mark - IBActions

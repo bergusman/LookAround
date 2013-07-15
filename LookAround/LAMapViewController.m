@@ -11,9 +11,11 @@
 #import "LAMainViewController.h"
 
 #import "LAPostCell.h"
+#import "LAPostAnnotationView.h"
+
+#import "LAPointAnnotation.h"
 
 #import <MapKit/MapKit.h>
-
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface LAMapViewController () <
@@ -39,8 +41,11 @@
     
     [self moveLegal];
     
-    
     self.tableView.userInteractionEnabled = YES;
+    
+    LAPointAnnotation *annotation = [[LAPointAnnotation alloc] init];
+    annotation.coordinate = CLLocationCoordinate2DMake(30, -90);
+    [self.mapView addAnnotation:annotation];
 }
 
 #pragma mark - Setups
@@ -79,6 +84,22 @@
 }
 
 #pragma mark - MKMapViewDelegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    if ([annotation isKindOfClass:[MKUserLocation class]]) {
+        return nil;
+    }
+    
+    static NSString *annotationIdentifier = @"PostAnnotation";
+    LAPostAnnotationView *annotationView = (LAPostAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:annotationIdentifier];
+    if (!annotationView) {
+        annotationView = [[LAPostAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:annotationIdentifier];
+        annotationView.frame = CGRectMake(0, 0, 50, 50);
+        annotationView.photoImageView.image = [UIImage imageNamed:@"Bern Switzerland.jpg"];
+    }
+    
+    return annotationView;
+}
 
 #pragma mark - UITableViewDataSource
 

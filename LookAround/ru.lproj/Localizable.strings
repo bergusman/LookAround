@@ -6,14 +6,14 @@
   Copyright (c) 2013 Vitaly Berg. All rights reserved.
 */
 
+// Common
 "cancel" = "Отменить";
 "close" = "Закрыть";
 "done" = "Готово";
 "back" = "Назад";
 "ok" = "Oк";
 
-"facebook.login.button" = "Войти с фейсбука";
-
+// Profile
 "profile.followers" = "Подписчики";
 "profile.following" = "Подписан";
 "profile.around" = "Вокруг";
@@ -23,5 +23,14 @@
 
 "make_post.gallery" = "Галлерея";
 
+// Post
 "post.comment.send" = "Отпр.";
 "post.comment.placeholder" = "Комментарий";
+
+// Menu
+"menu.item.around" = "Around";
+"menu.item.messages" = "Сообщения";
+
+// Log In
+"login.copyright" = "© 2013 lookaroundapp.com";
+"login.facebook.button" = "Войти с фейсбука";
