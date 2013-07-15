@@ -30,7 +30,7 @@
     [self setupLocalizableText];
     
     if (!IS_IPHONE_5) {
-        self.logoView.y = 95; // TODO: choose center.y for logo view for iPhone 4
+        self.logoView.y = 95;
     }
 }
 
