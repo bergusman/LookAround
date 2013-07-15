@@ -8,7 +8,10 @@
 
 #import "LAMenuViewController.h"
 
+#import "LAMainViewController.h"
 #import "LADialogsViewController.h"
+#import "LAUserViewController.h"
+#import "LAProfileViewController.h"
 
 #import "LAMenuItemCell.h"
 
@@ -47,8 +50,6 @@
     
     self.nameLabel.text = nil;
     self.nameLabel.attributedText = attributedText;
-    
-    
 }
 
 #pragma mark - Setups
@@ -56,6 +57,27 @@
 - (void)setupTableView {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([LAMenuItemCell class]) bundle:[NSBundle mainBundle]];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"MenuItemCell"];
+}
+
+#pragma mark - Content
+
+- (void)showMe {
+    
+}
+
+- (void)showAround {
+    [[LAMainViewController sharedMainVC] showRight];
+}
+
+- (void)showMessages {
+    LADialogsViewController *dialogsVC = [[LADialogsViewController alloc] init];
+    [self.navigationController pushViewController:dialogsVC animated:YES];
+}
+
+#pragma mark - Actions
+
+- (IBAction)meAction:(id)sender {
+    [self showMe];
 }
 
 #pragma mark - UITableViewDataSource
@@ -68,8 +90,13 @@
     static NSString *cellIdentifier = @"MenuItemCell";
     LAMenuItemCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    cell.badgeLabel.text = @"7";
-    
+    if (indexPath.row == 0) {
+        cell.titleLabel.text = NSLocalizedString(@"menu.item.around", @"");
+        cell.badgeLabel.text = @"14";
+    } else if (indexPath.row == 1) {
+        cell.titleLabel.text = NSLocalizedString(@"menu.item.messages", @"");
+        cell.badgeLabel.text = @"8";
+    }
     
     return cell;
 }
@@ -79,8 +106,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    LADialogsViewController *dialogsVC = [[LADialogsViewController alloc] init];
-    [self.navigationController pushViewController:dialogsVC animated:YES];
+    if (indexPath.row == 0) {
+        [self showAround];
+    } else if (indexPath.row == 1) {
+        [self showMessages];
+    }
 }
 
 @end
