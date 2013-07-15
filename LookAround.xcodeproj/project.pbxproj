@@ -87,6 +87,8 @@
 		AD96EDA2179465BD005C8D32 /* LAUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDA0179465BD005C8D32 /* LAUserViewController.xib */; };
 		AD96EDA5179471AF005C8D32 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDA3179471AF005C8D32 /* logo.png */; };
 		AD96EDA6179471AF005C8D32 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDA4179471AF005C8D32 /* logo@2x.png */; };
+		AD96EDAA17947813005C8D32 /* LAUserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD96EDA917947813005C8D32 /* LAUserHeaderView.m */; };
+		AD96EDAC17947842005C8D32 /* LAUserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD96EDAB17947842005C8D32 /* LAUserHeaderView.xib */; };
 		ADCD461B178953F0007FA354 /* LAImageStubs.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCD461A178953F0007FA354 /* LAImageStubs.m */; };
 		ADCD461D17895473007FA354 /* photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461C17895473007FA354 /* photos.plist */; };
 		ADCD461F178955FA007FA354 /* avatars.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCD461E178955FA007FA354 /* avatars.plist */; };
@@ -213,6 +215,9 @@
 		AD96EDA0179465BD005C8D32 /* LAUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAUserViewController.xib; sourceTree = "<group>"; };
 		AD96EDA3179471AF005C8D32 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Images/logo.png; sourceTree = "<group>"; };
 		AD96EDA4179471AF005C8D32 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "Images/logo@2x.png"; sourceTree = "<group>"; };
+		AD96EDA817947813005C8D32 /* LAUserHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAUserHeaderView.h; sourceTree = "<group>"; };
+		AD96EDA917947813005C8D32 /* LAUserHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAUserHeaderView.m; sourceTree = "<group>"; };
+		AD96EDAB17947842005C8D32 /* LAUserHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAUserHeaderView.xib; sourceTree = "<group>"; };
 		ADCD4619178953F0007FA354 /* LAImageStubs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAImageStubs.h; sourceTree = "<group>"; };
 		ADCD461A178953F0007FA354 /* LAImageStubs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAImageStubs.m; sourceTree = "<group>"; };
 		ADCD461C17895473007FA354 /* photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = photos.plist; sourceTree = "<group>"; };
@@ -340,6 +345,7 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD96EDA7179477EE005C8D32 /* User Profile */,
 				AD5BBE161792182C001E0330 /* Post Annotation */,
 				AD5BBDF21790C57A001E0330 /* Dialog Cell */,
 				AD5BBDE61790BE57001E0330 /* Menu Item Cell */,
@@ -678,6 +684,16 @@
 			name = User;
 			sourceTree = "<group>";
 		};
+		AD96EDA7179477EE005C8D32 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD96EDA817947813005C8D32 /* LAUserHeaderView.h */,
+				AD96EDA917947813005C8D32 /* LAUserHeaderView.m */,
+				AD96EDAB17947842005C8D32 /* LAUserHeaderView.xib */,
+			);
+			name = "User Profile";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -784,6 +800,7 @@
 				AD96EDA2179465BD005C8D32 /* LAUserViewController.xib in Resources */,
 				AD96EDA5179471AF005C8D32 /* logo.png in Resources */,
 				AD96EDA6179471AF005C8D32 /* logo@2x.png in Resources */,
+				AD96EDAC17947842005C8D32 /* LAUserHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,6 +874,7 @@
 				AD5BBE141792155F001E0330 /* LAPointAnnotation.m in Sources */,
 				AD5BBE191792185B001E0330 /* LAPostAnnotationView.m in Sources */,
 				AD96EDA1179465BD005C8D32 /* LAUserViewController.m in Sources */,
+				AD96EDAA17947813005C8D32 /* LAUserHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

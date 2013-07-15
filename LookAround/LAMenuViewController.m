@@ -62,7 +62,11 @@
 #pragma mark - Content
 
 - (void)showMe {
+    //LAProfileViewController *profileVC = [[LAProfileViewController alloc] init];
+    //[self.navigationController pushViewController:profileVC animated:YES];
     
+    LAUserViewController *userVC = [[LAUserViewController alloc] init];
+    [self.navigationController pushViewController:userVC animated:YES];
 }
 
 - (void)showAround {
