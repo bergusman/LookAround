@@ -113,6 +113,8 @@
     [cell.photoImageView setImageWithURL:[NSURL URLWithString:photoUrl]];
     [cell.avatarImageView setImageWithURL:[NSURL URLWithString:@"http://cs409222.vk.me/v409222051/271c/j6Vv-I6l0cQ.jpg"]];
     
+    cell.photoImageView.image = [UIImage imageNamed:@"Bristle Grass.jpg"];
+    
     return cell;
 }
 
@@ -122,6 +124,7 @@
     LAPostViewController *postVC = [[LAPostViewController alloc] init];
     
     [self addChildViewController:postVC];
+    postVC.view.frame = self.view.bounds;
     [self.view addSubview:postVC.view];
     [postVC didMoveToParentViewController:self];
     

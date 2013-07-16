@@ -8,7 +8,10 @@
 
 #import "LAPostViewController.h"
 
-@interface LAPostViewController ()
+@interface LAPostViewController () <
+    UITableViewDataSource,
+    UITableViewDelegate
+>
 
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 
@@ -43,5 +46,9 @@
         self.closeHandler();
     }
 }
+
+#pragma mark - UITableViewDataSource
+
+#pragma mark - UITableViewDelegate
 
 @end
