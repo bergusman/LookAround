@@ -20,6 +20,7 @@
 		AD2FC79217836E7100DB308E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79117836E7100DB308E /* Default.png */; };
 		AD2FC79417836E7100DB308E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79317836E7100DB308E /* Default@2x.png */; };
 		AD2FC79617836E7100DB308E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2FC79517836E7100DB308E /* Default-568h@2x.png */; };
+		AD399C5B1799CD9100B5F3B9 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD399C5A1799CD9100B5F3B9 /* Crashlytics.framework */; };
 		AD486AEF1784551800BBDA48 /* LAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AEE1784551800BBDA48 /* LAUser.m */; };
 		AD486AF21784553100BBDA48 /* LAPost.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AF11784553100BBDA48 /* LAPost.m */; };
 		AD486AF51784559800BBDA48 /* LAClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD486AF41784559800BBDA48 /* LAClient.m */; };
@@ -119,6 +120,7 @@
 		AD2FC79117836E7100DB308E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		AD2FC79317836E7100DB308E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		AD2FC79517836E7100DB308E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AD399C5A1799CD9100B5F3B9 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		AD486AED1784551800BBDA48 /* LAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAUser.h; sourceTree = "<group>"; };
 		AD486AEE1784551800BBDA48 /* LAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAUser.m; sourceTree = "<group>"; };
 		AD486AF01784553100BBDA48 /* LAPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPost.h; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				AD2FC78217836E7100DB308E /* Foundation.framework in Frameworks */,
 				AD2FC78417836E7100DB308E /* CoreGraphics.framework in Frameworks */,
 				7D3B7283A18144E69AF9A12B /* libPods.a in Frameworks */,
+				AD399C5B1799CD9100B5F3B9 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +290,7 @@
 				AD2FC78117836E7100DB308E /* Foundation.framework */,
 				AD2FC78317836E7100DB308E /* CoreGraphics.framework */,
 				777EC35F4A0B402A89C51711 /* libPods.a */,
+				AD399C5A1799CD9100B5F3B9 /* Crashlytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -706,6 +710,7 @@
 				AD2FC77917836E7100DB308E /* Frameworks */,
 				AD2FC77A17836E7100DB308E /* Resources */,
 				8990BB86F80C4DAAB7E736C8 /* Copy Pods Resources */,
+				AD399C591799CD4800B5F3B9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -835,6 +840,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
+		AD399C591799CD4800B5F3B9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 4613df15c886fc36a91b00f5fd159cd3ea12d5fb";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -962,6 +980,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 582E51B839F34DFFA256C34D /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LookAround/Prefix.pch;
 				INFOPLIST_FILE = LookAround/Info.plist;
@@ -974,6 +996,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 582E51B839F34DFFA256C34D /* Pods.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LookAround/Prefix.pch;
 				INFOPLIST_FILE = LookAround/Info.plist;

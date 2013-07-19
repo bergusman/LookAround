@@ -11,6 +11,7 @@
 #import "LAMainViewController.h"
 
 #import <FacebookSDK/FacebookSDK.h>
+#import <Crashlytics/Crashlytics.h>
 
 @implementation LAAppDelegate
 
@@ -22,6 +23,8 @@
 #pragma mark - UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Crashlytics startWithAPIKey:@"4613df15c886fc36a91b00f5fd159cd3ea12d5fb"];
+    
     LAMainViewController *mainVC = [[LAMainViewController alloc] init];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
