@@ -26,6 +26,8 @@
 
 @property (assign, nonatomic) BOOL hideButtonOnLeft;
 
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
 @end
 
 @implementation LAMainViewController
@@ -71,7 +73,7 @@ static LAMainViewController *_sharedMainVC;
     
     [self addChildViewController:menuNC];
     menuNC.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
-    [self.scrollView addSubview:menuNC.view];
+    [self.contentView addSubview:menuNC.view];
     [menuNC didMoveToParentViewController:self];
     self.leftViewController = menuNC;
     
@@ -90,7 +92,7 @@ static LAMainViewController *_sharedMainVC;
     
     */
     
-    
+    /*
     LAMapViewController *mapVC = [[LAMapViewController alloc] init];
     [self addChildViewController:mapVC];
     mapVC.view.frame = CGRectMake(320, 0, 320, self.view.frame.size.height);
@@ -98,6 +100,7 @@ static LAMainViewController *_sharedMainVC;
     [mapVC didMoveToParentViewController:self];
     
     self.rightViewController = mapVC;
+     */
     
     /*
     meVC.mapBlock = ^() {
@@ -121,50 +124,6 @@ static LAMainViewController *_sharedMainVC;
     self.scrollView.scrollsToTop = NO;
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    self.scrollView.contentSize = CGSizeMake(640, self.view.frame.size.height);
-}
-
-#pragma mark - Content
-
-- (void)setMakePostButtonAlpha {
-    CGFloat progress = (320 - self.scrollView.contentOffset.x) / 320;
-    progress = MIN(MAX(progress, 0), 1);
-    progress = 1 - progress;
-    
-    if (self.hideButtonOnLeft) {
-        self.makePostButton.alpha = progress;
-    } else {
-        self.makePostButton.alpha = 1;
-    }
-}
-
-#pragma mark - Public methods
-
-- (void)showMe {
-    LAProfileViewController *meVC = [[LAProfileViewController alloc] init];
-    [self addChildViewController:meVC];
-    meVC.view.frame = CGRectMake(0, 0, 320, self.view.frame.size.height);
-    [self.scrollView addSubview:meVC.view];
-    [meVC didMoveToParentViewController:self];
-    
-    [self.leftViewController willMoveToParentViewController:nil];
-    [self.leftViewController.view removeFromSuperview];
-    [self.leftViewController removeFromParentViewController];
-    
-    self.leftViewController = meVC;
-    self.hideButtonOnLeft = NO;
-}
-
-- (void)showLeft {
-    [self.scrollView scrollRectToVisible:CGRectMake(0, 0, 320, 100) animated:YES];
-}
-
-- (void)showRight {
-    [self.scrollView scrollRectToVisible:CGRectMake(320, 0, 320, 100) animated:YES];
-}
-
 - (void)setMakePostButtonHidden:(BOOL)hidden animated:(BOOL)animated {
     if (animated) {
         if (!hidden) {
@@ -182,32 +141,12 @@ static LAMainViewController *_sharedMainVC;
     }
 }
 
-#pragma mark - Property Accessors
-
-- (void)setHideButtonOnLeft:(BOOL)hideButtonOnLeft {
-    _hideButtonOnLeft = hideButtonOnLeft;
-    [self setMakePostButtonAlpha];
-}
-
 #pragma mark - IBActions
 
 - (IBAction)makePhotoAction:(id)sender {
     LAMakePostViewController *makePostVC = [[LAMakePostViewController alloc] init];
     makePostVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:makePostVC animated:YES completion:nil];
-    
-    
-    /*
-    UIImagePickerController *imagePickerVC = [[UIImagePickerController alloc] init];
-    imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
-    [self presentViewController:imagePickerVC animated:YES completion:nil];
-     */
-}
-
-#pragma mark - UIScrollViewDelegate
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [self setMakePostButtonAlpha];
 }
 
 #pragma mark - Singleton

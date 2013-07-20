@@ -70,7 +70,7 @@
 }
 
 - (void)showAround {
-    [[LAMainViewController sharedMainVC] showRight];
+    //[[LAMainViewController sharedMainVC] showRight];
 }
 
 - (void)showMessages {

@@ -70,7 +70,7 @@
 #pragma mark - Actions
 
 - (IBAction)leftAction:(id)sender {
-    [[LAMainViewController sharedMainVC] showLeft];
+    //[[LAMainViewController sharedMainVC] showLeft];
 }
 
 - (IBAction)tap:(id)sender {

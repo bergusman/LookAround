@@ -49,7 +49,7 @@
             return;
         }
         [session closeAndClearTokenInformation];
-        [[LAMainViewController sharedMainVC] showMe];
+        //[[LAMainViewController sharedMainVC] showMe];
     }];
 }
 

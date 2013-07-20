@@ -10,11 +10,6 @@
 
 @interface LAMainViewController : UIViewController
 
-- (void)showMe;
-
-- (void)showLeft;
-- (void)showRight;
-
 + (LAMainViewController *)sharedMainVC;
 
 - (void)setMakePostButtonHidden:(BOOL)hidden animated:(BOOL)animated;

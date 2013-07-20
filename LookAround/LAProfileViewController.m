@@ -97,7 +97,7 @@
 }
 
 - (IBAction)aroundAction:(id)sender {
-    [[LAMainViewController sharedMainVC] showRight];
+    //[[LAMainViewController sharedMainVC] showRight];
 }
 
 #pragma mark - LAProfileViewDelegate
