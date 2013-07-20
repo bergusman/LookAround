@@ -34,25 +34,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupTableView];
     [self setupComments];
+    [self setupTableView];
 }
 
 #pragma mark - Stubs
 
 - (void)setupComments {
-    return;
-    self.comments = @[
-        @"Bingo",
-        @"Bingo",
-        @"Bingo",
-        @"Bingo",
-        @"Bingo",
-        @"Bingo",
-        @"Bingo",
-        @"Bingo",
-        @"Bingo"
-    ];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"comments.plist" withExtension:@""];
+    self.comments = [NSArray arrayWithContentsOfURL:url];
 }
 
 #pragma mark - Setups

@@ -81,4 +81,8 @@
     [self.navigationController pushViewController:postVC animated:YES];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return [LADialogCell height];
+}
+
 @end

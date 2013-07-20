@@ -25,4 +25,6 @@ typedef NS_ENUM(NSInteger, LADialogCellType) {
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
++ (CGFloat)height;
+
 @end

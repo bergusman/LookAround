@@ -26,8 +26,8 @@
     [_strokeColor setFill];
     
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 0)];
-    [path addLineToPoint:CGPointMake(size.width, 0)];
+    [path moveToPoint:CGPointMake(0, self.bottom ? size.height : 0)];
+    [path addLineToPoint:CGPointMake(size.width, self.bottom ? size.height : 0)];
     path.lineWidth = 0.5;
     path.lineCapStyle = kCGLineCapRound;
     [path setLineDash:(CGFloat[]){0.5f, 1.5f} count:2 phase:0];

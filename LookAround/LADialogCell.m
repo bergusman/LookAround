@@ -34,4 +34,8 @@
     }
 }
 
++ (CGFloat)height {
+    return 70;
+}
+
 @end

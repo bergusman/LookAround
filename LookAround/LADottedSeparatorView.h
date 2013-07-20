@@ -10,4 +10,6 @@
 
 @interface LADottedSeparatorView : UIView
 
+@property (assign, nonatomic) BOOL bottom;
+
 @end

@@ -12,6 +12,7 @@
 		449AD4CB1788955C0075CF50 /* LAPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449AD4C91788955C0075CF50 /* LAPostViewController.xib */; };
 		44DC0A2F179A828A000B9F10 /* LACommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DC0A2E179A828A000B9F10 /* LACommentCell.m */; };
 		44DC0A31179A82A8000B9F10 /* LACommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DC0A30179A82A8000B9F10 /* LACommentCell.xib */; };
+		44DC0A33179AED33000B9F10 /* comments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44DC0A32179AED33000B9F10 /* comments.plist */; };
 		7D3B7283A18144E69AF9A12B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 777EC35F4A0B402A89C51711 /* libPods.a */; };
 		AD2FC78017836E7100DB308E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2FC77F17836E7100DB308E /* UIKit.framework */; };
 		AD2FC78217836E7100DB308E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2FC78117836E7100DB308E /* Foundation.framework */; };
@@ -110,6 +111,7 @@
 		44DC0A2D179A828A000B9F10 /* LACommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LACommentCell.h; sourceTree = "<group>"; };
 		44DC0A2E179A828A000B9F10 /* LACommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LACommentCell.m; sourceTree = "<group>"; };
 		44DC0A30179A82A8000B9F10 /* LACommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LACommentCell.xib; sourceTree = "<group>"; };
+		44DC0A32179AED33000B9F10 /* comments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = comments.plist; sourceTree = "<group>"; };
 		582E51B839F34DFFA256C34D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		777EC35F4A0B402A89C51711 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2FC77C17836E7100DB308E /* LookAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -508,6 +510,7 @@
 				AD4E3E2D1784C2BE0023757D /* Users.json */,
 				ADCD461C17895473007FA354 /* photos.plist */,
 				ADCD461E178955FA007FA354 /* avatars.plist */,
+				44DC0A32179AED33000B9F10 /* comments.plist */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				AD96EDA6179471AF005C8D32 /* logo@2x.png in Resources */,
 				AD96EDAC17947842005C8D32 /* LAUserHeaderView.xib in Resources */,
 				44DC0A31179A82A8000B9F10 /* LACommentCell.xib in Resources */,
+				44DC0A33179AED33000B9F10 /* comments.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
