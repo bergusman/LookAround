@@ -10,6 +10,8 @@
 		445C8AC317870C3D003D783C /* LANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 445C8AC217870C3D003D783C /* LANavigationController.m */; };
 		449AD4CA1788955C0075CF50 /* LAPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 449AD4C81788955C0075CF50 /* LAPostViewController.m */; };
 		449AD4CB1788955C0075CF50 /* LAPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449AD4C91788955C0075CF50 /* LAPostViewController.xib */; };
+		44DC0A2F179A828A000B9F10 /* LACommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DC0A2E179A828A000B9F10 /* LACommentCell.m */; };
+		44DC0A31179A82A8000B9F10 /* LACommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44DC0A30179A82A8000B9F10 /* LACommentCell.xib */; };
 		7D3B7283A18144E69AF9A12B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 777EC35F4A0B402A89C51711 /* libPods.a */; };
 		AD2FC78017836E7100DB308E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2FC77F17836E7100DB308E /* UIKit.framework */; };
 		AD2FC78217836E7100DB308E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2FC78117836E7100DB308E /* Foundation.framework */; };
@@ -105,6 +107,9 @@
 		449AD4C71788955C0075CF50 /* LAPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAPostViewController.h; sourceTree = "<group>"; };
 		449AD4C81788955C0075CF50 /* LAPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAPostViewController.m; sourceTree = "<group>"; };
 		449AD4C91788955C0075CF50 /* LAPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LAPostViewController.xib; sourceTree = "<group>"; };
+		44DC0A2D179A828A000B9F10 /* LACommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LACommentCell.h; sourceTree = "<group>"; };
+		44DC0A2E179A828A000B9F10 /* LACommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LACommentCell.m; sourceTree = "<group>"; };
+		44DC0A30179A82A8000B9F10 /* LACommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LACommentCell.xib; sourceTree = "<group>"; };
 		582E51B839F34DFFA256C34D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		777EC35F4A0B402A89C51711 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2FC77C17836E7100DB308E /* LookAround.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookAround.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +270,46 @@
 			name = Post;
 			sourceTree = "<group>";
 		};
+		44DC0A29179A822C000B9F10 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AD857F961785F42700803C8A /* Rounded Image View */,
+				AD857F8517854AB900803C8A /* Magic Button */,
+				AD857F9A178600D700803C8A /* Separator View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		44DC0A2A179A8235000B9F10 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44DC0A2C179A826D000B9F10 /* Comment Cell */,
+				AD5BBDE61790BE57001E0330 /* Menu Item Cell */,
+				AD749B8E1783893F00E3A387 /* User Cell */,
+				AD749B9D17838C7A00E3A387 /* Post Cell */,
+				AD5BBDF21790C57A001E0330 /* Dialog Cell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		44DC0A2B179A8253000B9F10 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BBE161792182C001E0330 /* Post Annotation */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		44DC0A2C179A826D000B9F10 /* Comment Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44DC0A2D179A828A000B9F10 /* LACommentCell.h */,
+				44DC0A2E179A828A000B9F10 /* LACommentCell.m */,
+				44DC0A30179A82A8000B9F10 /* LACommentCell.xib */,
+			);
+			name = "Comment Cell";
+			sourceTree = "<group>";
+		};
 		AD2FC77317836E7100DB308E = {
 			isa = PBXGroup;
 			children = (
@@ -349,16 +394,11 @@
 		AD2FC7A417836EC000DB308E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				44DC0A29179A822C000B9F10 /* Common */,
+				44DC0A2B179A8253000B9F10 /* Map */,
+				44DC0A2A179A8235000B9F10 /* Cells */,
 				AD96EDA7179477EE005C8D32 /* User Profile */,
-				AD5BBE161792182C001E0330 /* Post Annotation */,
-				AD5BBDF21790C57A001E0330 /* Dialog Cell */,
-				AD5BBDE61790BE57001E0330 /* Menu Item Cell */,
-				AD857F9A178600D700803C8A /* Separator View */,
-				AD857F961785F42700803C8A /* Rounded Image View */,
-				AD857F8517854AB900803C8A /* Magic Button */,
-				AD749B9D17838C7A00E3A387 /* Post Cell */,
 				AD749B9C17838BC300E3A387 /* Profile */,
-				AD749B8E1783893F00E3A387 /* User Cell */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -806,6 +846,7 @@
 				AD96EDA5179471AF005C8D32 /* logo.png in Resources */,
 				AD96EDA6179471AF005C8D32 /* logo@2x.png in Resources */,
 				AD96EDAC17947842005C8D32 /* LAUserHeaderView.xib in Resources */,
+				44DC0A31179A82A8000B9F10 /* LACommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -893,6 +934,7 @@
 				AD5BBE191792185B001E0330 /* LAPostAnnotationView.m in Sources */,
 				AD96EDA1179465BD005C8D32 /* LAUserViewController.m in Sources */,
 				AD96EDAA17947813005C8D32 /* LAUserHeaderView.m in Sources */,
+				44DC0A2F179A828A000B9F10 /* LACommentCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

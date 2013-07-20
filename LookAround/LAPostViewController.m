@@ -8,6 +8,10 @@
 
 #import "LAPostViewController.h"
 
+#import "LACommentCell.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+
 @interface LAPostViewController () <
     UITableViewDataSource,
     UITableViewDelegate
@@ -17,12 +21,45 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *photoButton;
 
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (strong, nonatomic) NSArray *comments;
+
 @end
 
 @implementation LAPostViewController
 
+#pragma mark - UIViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupTableView];
+    [self setupComments];
+}
+
+#pragma mark - Stubs
+
+- (void)setupComments {
+    return;
+    self.comments = @[
+        @"Bingo",
+        @"Bingo",
+        @"Bingo",
+        @"Bingo",
+        @"Bingo",
+        @"Bingo",
+        @"Bingo",
+        @"Bingo",
+        @"Bingo"
+    ];
+}
+
+#pragma mark - Setups
+
+- (void)setupTableView {
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([LACommentCell class]) bundle:[NSBundle mainBundle]];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"CommentCell"];
 }
 
 - (void)go {
@@ -49,6 +86,34 @@
 
 #pragma mark - UITableViewDataSource
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.comments count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *cellId = @"CommentCell";
+    LACommentCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    
+    NSDictionary *comment = self.comments[indexPath.row];
+    
+    cell.nameLabel.text = comment[@"name"];
+    cell.dateLabel.text = comment[@"date"];
+    cell.commentLabel.text = comment[@"comment"];
+    cell.avatarImageView
+    
+    
+    return cell;
+}
+
 #pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *comment = self.comments[indexPath.row];
+    return [LACommentCell heightWithComment:comment[@"comment"]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Do nothing
+}
 
 @end
