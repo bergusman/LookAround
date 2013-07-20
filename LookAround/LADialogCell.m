@@ -10,8 +10,15 @@
 
 @implementation LADialogCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    self.dateLabel.width = 100;
+    [self.dateLabel sizeToFit];
+    self.dateLabel.x = self.contentView.width - 10 - self.dateLabel.width;
+    self.dateLabel.height = 20;
+    
+    self.titleLabel.width = self.dateLabel.x - 10 - self.titleLabel.x;
 }
 
 - (void)setType:(LADialogCellType)type {
@@ -35,7 +42,7 @@
 }
 
 + (CGFloat)height {
-    return 70;
+    return 74;
 }
 
 @end
