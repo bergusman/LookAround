@@ -28,9 +28,9 @@
 - (void)setRead:(BOOL)read {
     _read = read;
     if (read) {
-        self.nameLabel.font = [UIFont systemFontOfSize:16];
+        self.titleLabel.font = [UIFont systemFontOfSize:16];
     } else {
-        self.nameLabel.font = [UIFont boldSystemFontOfSize:16];
+        self.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     }
 }
 

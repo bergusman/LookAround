@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, LADialogCellType) {
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel; // Bad propertye name
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
