@@ -99,8 +99,7 @@
     cell.nameLabel.text = comment[@"name"];
     cell.dateLabel.text = comment[@"date"];
     cell.commentLabel.text = comment[@"comment"];
-    cell.avatarImageView
-    
+    [cell.avatarImageView setImageWithURL:[NSURL URLWithString:comment[@"avatar"]] placeholderImage:nil];
     
     return cell;
 }
